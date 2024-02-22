@@ -40,4 +40,4 @@ async def on_message(message):
     else:
         await message.channel.send("Lütfen tekrarlar mısınız, sistemim algılayamadı)")
 
-client.run("MTIwOTkzMTc4Mzg3Mzg5MjM2Mg.GEKdsC.YCH2RK8hSj-jsyFkBysI0u7YU1irLN8ztKwDUs")
+    client.run("TOKEN")
