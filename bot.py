@@ -33,5 +33,10 @@ async def katıldı(ctx, member: discord.Member):
 @bot.command()
 async def ekle(ctx, sol: int, sağ: int):
     await ctx.send(sol + sağ)
-
+    
+@bot.command(name='Gt_Bot')
+async def bot(ctx):
+    """Is the bot cool?"""
+    await ctx.send('Bu bot havalıya benziyor.')
+    
 bot.run("token")
