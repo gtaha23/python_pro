@@ -29,6 +29,9 @@ async def taha(ctx,a):
 @bot.command()
 async def katıldı(ctx, member: discord.Member):
     await ctx.send(f'{member.name} katıldı {discord.utils.format_dt(member.joined_at)}')
-
+    
+@bot.command()
+async def ekle(ctx, sol: int, sağ: int):
+    await ctx.send(sol + sağ)
 
 bot.run("token")
