@@ -1,43 +1,34 @@
 import discord
+from discord.ext import commands
 
-import random
-
-import yeni
-
-# ayricaliklar (intents) değişkeni botun ayrıcalıklarını depolayacak
 intents = discord.Intents.default()
-# Mesajları okuma ayrıcalığını etkinleştirelim
 intents.message_content = True
-# client (istemci) değişkeniyle bir bot oluşturalım ve ayrıcalıkları ona aktaralım
-client = discord.Client(intents=intents)
 
-@client.event
+bot = commands.Bot(command_prefix='/', intents=intents)
+
+@bot.event
 async def on_ready():
-    print(f'{client.user} olarak giriş yaptık.')
+    print(f'{bot.user} olarak giriş yaptık')
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-    if message.content.startswith('$merhaba'):
-        await message.channel.send("Selam!")
+@bot.command()
+async def hello(ctx):
+    await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
 
-    elif message.content.startswith('$nasılsın'):
-        await message.channel.send("İyiyim! sen?") 
+@bot.command()
+async def heh(ctx, count_heh = 5):
+    await ctx.send("he" * count_heh)
 
-    elif message.content.startswith('$bende iyiyim'):
-        await message.channel.send("Harika!")    
+@bot.command()
+async def gökhan(ctx,a):
+    await ctx.send("merhaba gökhan!" * int(a))
 
-    elif message.content.startswith("$bye"):
-        await message.channel.send("Görüşürüz!")
+@bot.command()
+async def taha(ctx,a):
+    await ctx.send("merhaba taha!" * int(a))
 
-    elif message.content.startswith("gokhan2308"):
-        await message.channel.send("Nasılsın yazar!")
-    
-    elif message.content.startswith("alper"):
-        await message.channel.send(yeni.gen_pass(10))
+@bot.command()
+async def katıldı(ctx, member: discord.Member):
+    await ctx.send(f'{member.name} katıldı {discord.utils.format_dt(member.joined_at)}')
 
-    else:
-        await message.channel.send("Lütfen tekrarlar mısınız, sistemim algılayamadı)")
 
-    client.run("TOKEN")
+bot.run("token")
