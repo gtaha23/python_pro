@@ -36,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4) , /sifre(rastgele şifre oluşturur) ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4) , /sifre(rastgele şifre oluşturur) , /depo , /sağol ve /yardım ')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -66,4 +66,12 @@ async def emoji4(ctx):
 async def sifre(ctx):
     await ctx.send(yeni.gen_pass(10))
 
-bot.run("Token")
+@bot.command()
+async def depo(ctx):
+    await ctx.send("https://github.com/gtaha23/python_pro/blob/main/bot.py bağlantısı sizi depoya yölendirebilir!")
+
+@bot.command()
+async def sağol(ctx):
+    await ctx.send("Size hizmet etmek bir zevkti!")
+
+bot.run("token")
