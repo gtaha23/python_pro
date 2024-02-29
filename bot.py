@@ -1,10 +1,18 @@
 import discord
 from discord.ext import commands
 
+import random
+
+import yeni
+
 intents = discord.Intents.default()
 intents.message_content = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
+
+def emoji_olusturucu():
+    emoji = ["\U0001f600", "\U0001f642", "\U0001F606", "\U0001F923"]
+    return random.choice(emoji)
 
 @bot.event
 async def on_ready():
@@ -28,10 +36,34 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4) , /sifre(rastgele şifre oluşturur) ve /yardım ')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
     await ctx.send('Bu bot havalıya benziyor.')
+
+@bot.command(name='Malike')
+async def annem(ctx):
+    await ctx.send('Çok güzel bir isim! acaba kim.')
+
+@bot.command()
+async def emoji1(ctx):
+    await ctx.send("\U0001f600")
+
+@bot.command()
+async def emoji2(ctx):
+    await ctx.send("\U0001f642")
+
+@bot.command()
+async def emoji3(ctx):
+    await ctx.send("\U0001F606")
+
+@bot.command()
+async def emoji4(ctx):
+    await ctx.send("\U0001F923")
+
+@bot.command()
+async def sifre(ctx):
+    await ctx.send(yeni.gen_pass(10))
 
 bot.run("Token")
