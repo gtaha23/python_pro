@@ -74,4 +74,12 @@ async def depo(ctx):
 async def sağol(ctx):
     await ctx.send("Size hizmet etmek bir zevkti!")
 
+@bot.command()
+async def mamaci(ctx):
+    await ctx.send("Demek gizli kodu buldun! aramıza hoşgeldin.")
+
+@bot.command()
+async def milliyetçi(ctx):
+    await ctx.send("Yaşasın ırkımız, Çin'e bedel kırkımız, Söylenir türkümüz dağlarda dağlara ")
+
 bot.run("token")
