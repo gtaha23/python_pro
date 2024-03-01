@@ -80,6 +80,14 @@ async def mamaci(ctx):
 
 @bot.command()
 async def milliyetçi(ctx):
-    await ctx.send("Yaşasın ırkımız, Çin'e bedel kırkımız, Söylenir türkümüz dağlarda dağlara ")
+    await ctx.send("Yaşasın ırkımız, Çin'e bedel kırkımız, Söylenir türkümüz dağlarda dağlara ")   
+
+@bot.command()
+async def yakala(ctx, count_yakala = 5):
+    await ctx.send("Yakala chat" * count_yakala)
+
+@bot.command()
+async def tay(ctx):
+    await ctx.send("İşte efsane 2021 üçlüsü: Taha, Ahmet, Yavuz")
 
 bot.run("token")
