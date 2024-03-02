@@ -36,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4) , /sifre(rastgele şifre oluşturur) , /depo , /sağol ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay ve /yardım ')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -89,5 +89,21 @@ async def yakala(ctx, count_yakala = 5):
 @bot.command()
 async def tay(ctx):
     await ctx.send("İşte efsane 2021 üçlüsü: Taha, Ahmet, Yavuz")
+
+@bot.command()
+async def babapiro(ctx):
+    await ctx.send("Uyyy birowl sıtar bir nümara")
+
+@bot.command()
+async def bruv(ctx):
+    await ctx.send("Oi bruv can ı get a bo'o o'wa'er")
+
+@bot.command()
+async def hamster(ctx):
+    await ctx.send("Hamstır şit o yeee")
+
+@bot.command()
+async def Bjk(ctx):
+    await ctx.send("ÇARŞI 1903 OOO BJK HEY HEY HEY")
 
 bot.run("token")
