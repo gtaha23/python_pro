@@ -36,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay ve /yardım ')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -61,6 +61,26 @@ async def emoji3(ctx):
 @bot.command()
 async def emoji4(ctx):
     await ctx.send("\U0001F923")
+
+@bot.command()
+async def emoji5(ctx):
+    await ctx.send("\U0001F945")
+
+@bot.command()
+async def emoji6(ctx):
+    await ctx.send("\U0001f756")
+
+@bot.command()
+async def emoji7(ctx):
+    await ctx.send("\U0001f875")
+
+@bot.command()
+async def emoji8(ctx):
+    await ctx.send("\U0001f985")
+
+@bot.command()
+async def emoji9(ctx):
+    await ctx.send("\U0001f578")
 
 @bot.command()
 async def sifre(ctx):
