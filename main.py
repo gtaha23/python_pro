@@ -15,3 +15,4 @@ for i in range(5):
     else:
         # Kelime eşleşmiyorsa ne yapmalıyız?
         print(word,"kelimesinin anlamı bulunamadı.")
+                
