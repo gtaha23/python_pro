@@ -36,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9,10) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay , /yapımcı ve /yardım ')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -83,12 +83,32 @@ async def emoji9(ctx):
     await ctx.send("\U0001f578")
 
 @bot.command()
+async def emoji10(ctx):
+    await ctx.send("\U0001f786")    
+
+@bot.command()
+async def mem1(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/1209932750581399685/1214958213795942410/Kod_memes.png?ex=65fb0103&is=65e88c03&hm=b698c27c218f0e233bc02a1b6560a90248482b79621c98045dcfa6c64abec75f&")
+
+@bot.command()
+async def mem2(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/1209932750581399685/1214960216458928139/Kod_memes2.png?ex=65fb02e0&is=65e88de0&hm=e97a524e2cc850a91bbe7fbe195b3f331c92983c1801570447294d86915d9272&")
+
+@bot.command()
+async def mem3(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/1209932750581399685/1214962112758026312/Kod_memes3.png?ex=65fb04a4&is=65e88fa4&hm=f0a4977b11fc21a8ff805fe7bb5703f6e456c0003bbce701b8c27873f06785fd&")
+    
+@bot.command()
 async def sifre(ctx):
     await ctx.send(yeni.gen_pass(10))
 
 @bot.command()
 async def depo(ctx):
-    await ctx.send("https://github.com/gtaha23/python_pro/blob/main/bot.py bağlantısı sizi depoya yölendirebilir!")
+    await ctx.send("https://github.com/gtaha23/python_pro bağlantısı sizi depoya yölendirebilir!")
+
+@bot.command()
+async def yapımcı(ctx):
+    await ctx.send("https://github.com/gtaha23/gtaha23/blob/main/README.md bağlantısı sizi Yapımcıya yölendirebilir!")
 
 @bot.command()
 async def sağol(ctx):
