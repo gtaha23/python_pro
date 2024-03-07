@@ -1,9 +1,9 @@
 import discord
 from discord.ext import commands
-
 import random
-
-import yeni
+import sifreci
+import os
+import requests
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -87,20 +87,58 @@ async def emoji10(ctx):
     await ctx.send("\U0001f786")    
 
 @bot.command()
-async def mem1(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/1209932750581399685/1214958213795942410/Kod_memes.png?ex=65fb0103&is=65e88c03&hm=b698c27c218f0e233bc02a1b6560a90248482b79621c98045dcfa6c64abec75f&")
+async def mem(ctx):
+    resimler = os.listdir("resimler")
+    resim = random.choice(resimler)
+    with open(f'resimler/{resim}', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
 
 @bot.command()
-async def mem2(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/1209932750581399685/1214960216458928139/Kod_memes2.png?ex=65fb02e0&is=65e88de0&hm=e97a524e2cc850a91bbe7fbe195b3f331c92983c1801570447294d86915d9272&")
+async def mem_nadirlik(ctx):
+    await ctx.send("Kod memes3 nadirlik: En yaygın  Kod memes2 nadirlik: Yaygın  Kod memes nadirlik: Nadir  Kod memes4 nadirlik: Çok nadir  Kod memes5: Efsanevi")
+
+def get_duck_image_url():    
+    url = 'https://random-d.uk/api/random'
+    res = requests.get(url)
+    data = res.json()
+    return data['url']
+
+
+@bot.command('ördek')
+async def ördek(ctx):
+    image_url = get_duck_image_url()
+    await ctx.send(image_url)
+
+def gelkedi():
+    url = 'https://api.thecatapi.com/v1/images/search'
+    res = requests.get(url)
+    data = res.json()
+    print(data)
+    print(data[0])
+    return data[0]["url"]
+
 
 @bot.command()
-async def mem3(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/1209932750581399685/1214962112758026312/Kod_memes3.png?ex=65fb04a4&is=65e88fa4&hm=f0a4977b11fc21a8ff805fe7bb5703f6e456c0003bbce701b8c27873f06785fd&")
-    
+async def kedi(ctx):
+    image_url = gelkedi()
+    await ctx.send(image_url)
+
+def Dogs():    
+    url = 'https://random.dog/woof.json'
+    res = requests.get(url)
+    data = res.json()
+    return data['url']
+
+
+@bot.command('köpek')
+async def köpek(ctx):
+    image_url = Dogs()
+    await ctx.send(image_url)
+
 @bot.command()
 async def sifre(ctx):
-    await ctx.send(yeni.gen_pass(10))
+    await ctx.send(sifreci.gen_pass(10))
 
 @bot.command()
 async def depo(ctx):
