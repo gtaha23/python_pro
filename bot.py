@@ -10,10 +10,6 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
-def emoji_olusturucu():
-    emoji = ["\U0001f600", "\U0001f642", "\U0001F606", "\U0001F923"]
-    return random.choice(emoji)
-
 @bot.event
 async def on_ready():
     print(f'{bot.user} olarak giriş yaptık')
@@ -36,7 +32,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9,10) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay , /yapımcı ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9,10) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay , /yapımcı , /mem , /mem_nadirlik , /ördek , /kedi , /köpek , /bovcx ve /yardım ')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -96,7 +92,7 @@ async def mem(ctx):
 
 @bot.command()
 async def mem_nadirlik(ctx):
-    await ctx.send("Kod memes3 nadirlik: En yaygın  Kod memes2 nadirlik: Yaygın  Kod memes nadirlik: Nadir  Kod memes4 nadirlik: Çok nadir  Kod memes5: Efsanevi")
+    await ctx.send("Kod memes3 nadirlik: En yaygın  Kod memes2 nadirlik: Yaygın  Kod memes nadirlik: Nadir  Kod memes4 nadirlik: Destansı  Kod memes5: Efsanevi Kod memes6:Çok nadir")
 
 def get_duck_image_url():    
     url = 'https://random-d.uk/api/random'
@@ -129,7 +125,6 @@ def Dogs():
     res = requests.get(url)
     data = res.json()
     return data['url']
-
 
 @bot.command('köpek')
 async def köpek(ctx):
@@ -182,6 +177,18 @@ async def hamster(ctx):
 
 @bot.command()
 async def Bjk(ctx):
-    await ctx.send("ÇARŞI 1903 OOO BJK HEY HEY HEY")
+    await ctx.send("ÇARŞI 1903 OOO BJK HEY HEY HEY")    
+
+@bot.command()
+async def Benzema(ctx):
+    await ctx.send("15💀☠️💀")
+
+@bot.command()
+async def santıranç(ctx):
+    await ctx.send("What the heeeeeeeeeell")
+
+@bot.command()
+async def bovcx(ctx):
+    await ctx.send("O mey gat BOVCXXX")
 
 bot.run("token")
