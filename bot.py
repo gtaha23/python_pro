@@ -203,5 +203,9 @@ async def santıranç(ctx):
 @bot.command()
 async def bovcx(ctx):
     await ctx.send("O mey gat BOVCXXX")
-    
+
+@bot.command()
+async def tarih(ctx):
+    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.") 
+
 bot.run("token")
