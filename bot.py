@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9,10) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay , /yapımcı , /mem , /mem_nadirlik , /ördek , /kedi , /köpek , /bovcx ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9,10) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay , /yapımcı , /mem , /mem_nadirlik , /ördek , /kedi , /köpek , /tilki , /bovcx , /santıranç , /babapiro , /bruv , /Benzema ve /yardım ')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -103,7 +103,6 @@ def get_duck_image_url():
     data = res.json()
     return data['url']
 
-
 @bot.command('ördek')
 async def ördek(ctx):
     image_url = get_duck_image_url()
@@ -138,7 +137,7 @@ def fox():
     url = 'https://randomfox.ca/floof/'
     res = requests.get(url)
     data = res.json()
-    return data['url']
+    return data['image']
 
 @bot.command('tilki')
 async def tilki(ctx):
@@ -204,5 +203,5 @@ async def santıranç(ctx):
 @bot.command()
 async def bovcx(ctx):
     await ctx.send("O mey gat BOVCXXX")
-
+    
 bot.run("token")
