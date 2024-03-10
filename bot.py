@@ -20,7 +20,10 @@ async def selam(ctx):
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
-    await ctx.send("he" * count_heh)
+    if count_heh > 3000:
+        await ctx.send("Discordunu çökertmemimi istiyorsun?")
+    else:    
+        await ctx.send("he" * count_heh)
 
 @bot.command()
 async def gökhan(ctx):
@@ -129,6 +132,17 @@ def Dogs():
 @bot.command('köpek')
 async def köpek(ctx):
     image_url = Dogs()
+    await ctx.send(image_url)
+
+def fox():    
+    url = 'https://randomfox.ca/floof/'
+    res = requests.get(url)
+    data = res.json()
+    return data['url']
+
+@bot.command('tilki')
+async def tilki(ctx):
+    image_url = fox()
     await ctx.send(image_url)
 
 @bot.command()
