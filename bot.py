@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon ve /yardım')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -84,6 +84,46 @@ async def emoji9(ctx):
 @bot.command()
 async def emoji10(ctx):
     await ctx.send("\U0001f786")    
+
+@bot.command()
+async def emoji11(ctx):
+    await ctx.send("\U0001f362")
+
+@bot.command()
+async def emoji12(ctx):
+    await ctx.send("\U0001f999")
+
+@bot.command()
+async def emoji13(ctx):
+    await ctx.send("\U0001f687")
+
+@bot.command()
+async def emoji14(ctx):
+    await ctx.send("\U0001F463")
+
+@bot.command()
+async def emoji15(ctx):
+    await ctx.send("\U0001F364")
+
+@bot.command()
+async def emoji16(ctx):
+    await ctx.send("\U0001F643")
+
+@bot.command()
+async def emoji17(ctx):
+    await ctx.send("\U0001F227")
+
+@bot.command()
+async def emoji18(ctx):
+    await ctx.send("\U0001F666")
+
+@bot.command()
+async def emoji19(ctx):
+    await ctx.send("\U0001F256")   
+
+@bot.command()
+async def emoji20(ctx):
+    await ctx.send("\U0001F435") 
 
 @bot.command()
 async def mem(ctx):
@@ -191,6 +231,10 @@ async def tek_sayilar(ctx):
 @bot.command()
 async def masayi_duzenle(ctx):
     await ctx.send("┳━┳ ノ( ゜-゜ノ)")
+
+@bot.command()
+async def fenerasyon(ctx):
+    await ctx.send("124 penaltı kullanınca febem olur gibi")
 
 @bot.command()
 async def depo(ctx):
