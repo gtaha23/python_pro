@@ -5,7 +5,6 @@ import sifreci
 import os
 import requests
 
-
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -36,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik ve /yardım')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -93,6 +92,18 @@ async def mem(ctx):
     with open(f'resimler/{resim}', 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file=picture)
+
+@bot.command()
+async def espri(ctx):
+    espriler = os.listdir("espriler")
+    espri = random.choice(espriler)
+    with open(f'espriler/{espri}', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+
+@bot.command()
+async def espri_nadirlik(ctx):
+    await ctx.send("espri4: En yaygın espri3: Yaygın espri1: Nadir espri3: Çok Nadir")
 
 @bot.command()
 async def mem_nadirlik(ctx):
