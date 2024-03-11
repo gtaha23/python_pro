@@ -5,6 +5,7 @@ import sifreci
 import os
 import requests
 
+
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -35,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam , /heh , /gökhan , /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz) , /Gt_Bot , /Malike(anneme özel kod) , /emoji(1,2,3,4,5,6,7,8,9,10) , /sifre(rastgele şifre oluşturur) , /depo , /sağol /milliyetçi , /yakala , /tay , /yapımcı , /mem , /mem_nadirlik , /ördek , /kedi , /köpek , /tilki , /bovcx , /santıranç , /babapiro , /bruv , /Benzema ve /yardım ')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem ve /yardım')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -149,6 +150,14 @@ async def sifre(ctx):
     await ctx.send(sifreci.gen_pass(10))
 
 @bot.command()
+async def ters_masa(ctx):
+    await ctx.send("(╯°□°）╯︵ ┻━┻")
+
+@bot.command()
+async def ben_bilmem(ctx):
+    await ctx.send("¯\_(ツ)_/¯")
+    
+@bot.command()
 async def depo(ctx):
     await ctx.send("https://github.com/gtaha23/python_pro bağlantısı sizi depoya yölendirebilir!")
 
@@ -206,6 +215,6 @@ async def bovcx(ctx):
 
 @bot.command()
 async def tarih(ctx):
-    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.") 
+    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.")  
 
 bot.run("token")
