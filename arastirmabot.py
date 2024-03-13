@@ -37,4 +37,4 @@ async def cevre(ctx):
         picture = discord.File(f)
     await ctx.send(file=picture)
 
-bot.run("MTIxNzU0MzU5MDc3MTgxODUwNw.G8iCnh.J9B63n2tYBse1dgCqgKxH3GqtI6bXDJJaI2Y7M")
+bot.run("token")
