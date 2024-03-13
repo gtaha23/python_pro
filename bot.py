@@ -20,14 +20,14 @@ async def selam(ctx):
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
-    if count_heh > 3000:
+    if count_heh > 1000:
         await ctx.send("Discordunu çökertmemimi istiyorsun?")
     else:    
         await ctx.send("he" * count_heh)
 
-@bot.command()
+@bot.command(name='Gökhan')
 async def gökhan(ctx):
-    await ctx.send("Ooo kimler gelmiş! selam yazar!")
+    await ctx.send('Ooo kimler gelmiş! selam yazar!')
 
 @bot.command()
 async def katıldı(ctx, member: discord.Member):
@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon, /yazılım_dili, /discord, /don_pollo, /tl ve /yardım')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -233,8 +233,24 @@ async def masayi_duzenle(ctx):
     await ctx.send("┳━┳ ノ( ゜-゜ノ)")
 
 @bot.command()
-async def fenerasyon(ctx):
-    await ctx.send("124 penaltı kullanınca febem olur gibi")
+async def baldiback(ctx):
+    await ctx.send("https://tenor.com/view/swedish-gif-18685828")
+
+@bot.command()
+async def yazılım_dili(ctx):
+    await ctx.send("Bu bot Python yazılım dili kullanılarak yapılmıştır.")
+
+@bot.command()
+async def discord(ctx):
+    await ctx.send("Discord'a hoşgeldin ben Gt_Bot!")
+
+@bot.command()
+async def don_pollo(ctx):
+    await ctx.send("EL QUE QUEIRA PERDE SO TİEMPO QE ENTRA YA A Mİ PERFİL ")
+
+@bot.command()
+async def tl(ctx):
+    await ctx.send("https://tenor.com/view/dolar-dolartlyekarsienflasyon-gif-18543428")
 
 @bot.command()
 async def depo(ctx):
