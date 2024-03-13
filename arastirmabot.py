@@ -14,6 +14,10 @@ async def on_ready():
     print(f'{bot.user} olarak giriş yaptık')
 
 @bot.command()
+async def yardım(ctx):
+    await ctx.send("İşte beni çağırmak için kodlar: /tehlikeli_atik, /cevre_dostu, /en_yuksek, /en_dusuk, /tarih, /cevre")
+
+@bot.command()
 async def tehlikeli_atik(ctx):
     await ctx.send("Tehlikeli atıkların bertaraf işlemleri; yakma, kuyuya boşaltma, suya boşaltma, arazi bertarafı ve yeraltı bertarafı olarak ifade edilebilmektedir.")
 
@@ -26,8 +30,12 @@ async def en_yuksek(ctx):
     await ctx.send("Geri dönüşümün en yüksek olduğu ülke ise yüzde 83,2 ile İtalya.")
 
 @bot.command()
-async def en_yuksek(ctx):
+async def en_dusuk(ctx):
     await ctx.send("En düşük ülkeler ise yüzde 3 ile Sırbistan ve yüzde 5,2 ile Romanya'da.")
+
+@bot.command()
+async def tarih(ctx):
+    await ctx.send("Bu bot bir araştırma için Gökhan Taha AĞPINAR tarafından 13.03.2024 tarihinde oluşturulmuştur.")
 
 @bot.command()
 async def cevre(ctx):
