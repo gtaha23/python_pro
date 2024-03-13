@@ -16,3 +16,4 @@ for i in range(5):
         # Kelime eşleşmiyorsa ne yapmalıyız?
         print(word,"kelimesinin anlamı bulunamadı.")
                 
+                
