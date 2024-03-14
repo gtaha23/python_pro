@@ -50,9 +50,9 @@ async def on_message(message):
         await message.channel.send("\U0001F426")    
     elif message.content.startswith("$emoji9"):
         await message.channel.send("\U0001F257")
-    elif message.content.startswith("$emoji9"):
-        await message.channel.send("\U0001f354")
     elif message.content.startswith("$emoji10"):
+        await message.channel.send("\U0001f534")
+    elif message.content.startswith("$emoji11"):
         await message.channel.send("\U0001f313")
 
     elif message.content.startswith("$görüşürüz"):
@@ -62,7 +62,7 @@ async def on_message(message):
         await message.channel.send("Nasılsın yazar!")
 
     elif message.content.startswith("$yardım"):
-        await message.channel.send("İşte kodlarım: $merhaba, $nasılsın, $bende iyiyim, $emoji(1,2,3,4,5,6,7,8,9,10), $görüşürüz, $gokhan2308,$şifre, $yardım")
+        await message.channel.send("İşte kodlarım: $merhaba, $nasılsın, $bende iyiyim, $emoji(1,2,3,4,5,6,7,8,9,10,11), $görüşürüz, $gokhan2308,$şifre, $yardım")
 
     elif message.content.startswith("$şifre"):
         await message.channel.send(sifreci.gen_pass(10))
