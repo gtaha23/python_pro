@@ -15,7 +15,7 @@ async def on_ready():
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send("İşte beni çağırmak için kodlar: /tehlikeli_atik, /cevre_dostu, /en_yuksek, /en_dusuk, /tarih, /cevre")
+    await ctx.send("İşte beni çağırmak için kodlar: /tehlikeli_atik, /cevre_dostu, /en_yuksek, /en_dusuk, /tarih, /cevre, /yenilenemez ve /yardım")
 
 @bot.command()
 async def tehlikeli_atik(ctx):
@@ -44,6 +44,10 @@ async def yenilenebilir(ctx):
 @bot.command()
 async def en_kirli(ctx):
     await ctx.send("Saraybosna Aralık ayında dünyanın havası en kirli şehirleri listesinin başında. IQAir verilerine göre, hava kirliliğinde Saraybosna'yı, Hindistan'ın Kalküta, Sırbistan'ın başkenti Belgrad, Bangladeş'in başkenti Dakka ve Pakistan'ın Lahor şehirleri izliyor.")
+
+@bot.command()
+async def yenilenemez(ctx):
+    await ctx.send("Yenilenemez enerji kaynakları: Kömür, Doğalgaz, Petrol,...")
 
 @bot.command()
 async def cevre(ctx):
