@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi ve /yardım')
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -221,6 +221,14 @@ async def iletişim(ctx):
     await ctx.send("iletişim için gokhantahagpinar@gmail.com'a mail gönderebilirsiniz.")
 
 @bot.command()
+async def kurallar(ctx):
+    await ctx.send("Kurallar: 1.Saygılı olun 2.Botu boşyere kullanmayın 3.Yazılımcı olmak için botunuzu kurucuya gösterin 4.Botu geliştirmek için fikirlerinizi lütfen söyleyin")
+
+@bot.command()
+async def komut_sayisi(ctx):
+    await ctx.send("Şuanda 52 komut vardır.(İlerideki hedef 55)")
+
+@bot.command()
 async def git(ctx):
     await ctx.send("Peki nere gideem?")
 
@@ -241,6 +249,14 @@ async def yazılım_dili(ctx):
     await ctx.send("Bu bot Python yazılım dili kullanılarak yapılmıştır.")
 
 @bot.command()
+async def youtube(ctx):
+    await ctx.send("https://www.youtube.com/channel/UCQe6Kt2hyfFhaDL3lhwM9PQ kanalı bu botun sahibinindir")
+
+@bot.command()
+async def destek(ctx):
+    await ctx.send("https://www.youtube.com/channel/UCQe6Kt2hyfFhaDL3lhwM9PQ ve https://github.com/gtaha23 hesaplarını takip ederek bize destek edebilirsiniz.")
+
+@bot.command()
 async def dc(ctx):
     await ctx.send("Discord'a hoşgeldin ben Gt_Bot!")
 
@@ -257,6 +273,10 @@ async def alman_kedy(ctx):
     await ctx.send("https://tenor.com/view/bingus-gunner-german-bunker-shooting-gif-20956445")
 
 @bot.command()
+async def kodland(ctx):
+    await ctx.send("https://media.discordapp.net/attachments/1188018611252629554/1188018611428802590/k_2.gif?ex=65fe830d&is=65ec0e0d&hm=2712d9d8137b8e5715ac55a65023baaa44607f9d7ae77cf7817af549141091c6&")
+
+@bot.command()
 async def depo(ctx):
     await ctx.send("https://github.com/gtaha23/python_pro bağlantısı sizi depoya yölendirebilir!")
 
@@ -267,6 +287,18 @@ async def yapımcı(ctx):
 @bot.command()
 async def sağol(ctx):
     await ctx.send("Size hizmet etmek bir zevkti!")
+
+@bot.command()
+async def fetosaray(ctx):
+    await ctx.send("https://tenor.com/view/be%C5%9Fikta%C5%9F-besiktas-cenk-tosun-rosier-ghezzal-gif-17552552850292197724")
+
+@bot.command()
+async def client(ctx):
+    await ctx.send("Client sınıfı basit bir discord botu oluşturmak için idealdir")
+
+@bot.command()
+async def basic(ctx):
+    await ctx.send("Python basic: python yazılım dilinde basit işler yapmak için bir kurstur( oyun yapabilirsiniz :) )")
 
 @bot.command()
 async def mamaci(ctx):
