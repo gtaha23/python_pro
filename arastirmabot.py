@@ -38,6 +38,14 @@ async def tarih(ctx):
     await ctx.send("Bu bot bir araştırma için Gökhan Taha AĞPINAR tarafından 13.03.2024 tarihinde oluşturulmuştur.")
 
 @bot.command()
+async def yenilenebilir(ctx):
+    await ctx.send("Yenilenebilir enerji kaynakları: Jeotermal, Rüzgar enerjisi, Güneş enerjisi, Hidroelektrik, Biokütle, Biogaz,...")
+
+@bot.command()
+async def en_kirli(ctx):
+    await ctx.send("Saraybosna Aralık ayında dünyanın havası en kirli şehirleri listesinin başında. IQAir verilerine göre, hava kirliliğinde Saraybosna'yı, Hindistan'ın Kalküta, Sırbistan'ın başkenti Belgrad, Bangladeş'in başkenti Dakka ve Pakistan'ın Lahor şehirleri izliyor.")
+
+@bot.command()
 async def cevre(ctx):
     arastirma = os.listdir("arastirma")
     arastirma = random.choice(arastirma)
