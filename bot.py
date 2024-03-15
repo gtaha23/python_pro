@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /fetosaray, /client, /basic, /tester, /depoyardım, cift_sayilar, /diğerbotlar ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /fetosaray, /client, /basic, /tester, /depoyardım, cift_sayilar, /diğerbotlar ve /yardım')
 
 @bot.command()
 async def tester(ctx):
@@ -44,6 +44,10 @@ async def tester(ctx):
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
     await ctx.send('Bu bot havalıya benziyor.')
+
+@bot.command()
+async def bilgi(ctx):
+    await ctx.send("Bu bot Gökhan Taha AĞPINAR tarafından Kodland'ın Python pro kursu ve yazılımcılıkta bir başlangıç için yapılmıştır.")
 
 @bot.command(name='Malike')
 async def annem(ctx):
