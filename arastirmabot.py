@@ -7,7 +7,7 @@ from discord.ext import commands
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='/', intents=intents)
+bot = commands.Bot(command_prefix='?', intents=intents)
 
 @bot.event
 async def on_ready():
@@ -15,7 +15,7 @@ async def on_ready():
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send("İşte beni çağırmak için kodlar: /tehlikeli_atik, /cevre_dostu, /en_yuksek, /en_dusuk, /tarih, /cevre, /yenilenemez ve /yardım")
+    await ctx.send("İşte beni çağırmak için kodlar: ?tehlikeli_atik, ?cevre_dostu, ?en_yuksek, ?en_dusuk, ?tarih, ?cevre, ?yenilenemez, ?hava_kirliliği, ?toprak_kirliliği ve ?yardım")
 
 @bot.command()
 async def tehlikeli_atik(ctx):
@@ -48,6 +48,14 @@ async def en_kirli(ctx):
 @bot.command()
 async def yenilenemez(ctx):
     await ctx.send("Yenilenemez enerji kaynakları: Kömür, Doğalgaz, Petrol,...")
+
+@bot.command()
+async def hava_kirliliği(ctx):
+    await ctx.send("Hava kirliliği, havanın doğal bileşiminin çeşitli nedenlerle değişmesi, havada katı, sıvı ve gaz şeklindeki yabancı maddelerin insan sağlığına, canlı hayatına, ekolojik dengeye ve eşyalara zararlı olabilecek derişim ve sürede bulunmasıdır.")
+
+@bot.command()
+async def toprak_kirliliği(ctx):
+    await ctx.send("Toprak kirliliği, katı, sıvı ve radyoaktif artık ve kirleticiler tarafından toprağın fiziksel ve kimyasal özelliklerinin bozulmasıdır. Topraklarda meydana gelecek tüm olumsuz değişimler insan yaşamını kuvvetle etkileyecek güce sahiptir.")
 
 @bot.command()
 async def cevre(ctx):
