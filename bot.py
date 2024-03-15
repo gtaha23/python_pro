@@ -35,7 +35,11 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /fenerasyon, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /fetosaray, /client, /basic, /tester, /depoyardım, cift_sayilar, /diğerbotlar ve /yardım')
+
+@bot.command()
+async def tester(ctx):
+    await ctx.send("Bu botun tester'ı olmak için gokhan2308 adlı hesap ile iletişime geçebilirsiniz.")
 
 @bot.command(name='Gt_Bot')
 async def robot(ctx):
@@ -124,6 +128,10 @@ async def emoji19(ctx):
 @bot.command()
 async def emoji20(ctx):
     await ctx.send("\U0001F435") 
+
+@bot.command()
+async def emojiPY(ctx):
+    await ctx.send("https://cdn.discordapp.com/emojis/1139439539224580116.webp?size=128&quality=lossless")
 
 @bot.command()
 async def mem(ctx):
@@ -217,6 +225,10 @@ async def mercan(ctx):
     await ctx.send("Mercan! abisinin tatlış kedisi, nasılsın?")
 
 @bot.command()
+async def diğerbotlar(ctx):
+    await ctx.send("Diğer botlar @Momoşko ve @Araştırmabot'dur ve şuanda @Araştırmabot üzerinde çalışılıyor.")
+
+@bot.command()
 async def iletişim(ctx):
     await ctx.send("iletişim için gokhantahagpinar@gmail.com'a mail gönderebilirsiniz.")
 
@@ -226,7 +238,7 @@ async def kurallar(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 52 komut vardır.(İlerideki hedef 55)")
+    await ctx.send("Şuanda 55 komut vardır.(İlerideki hedef 60)")
 
 @bot.command()
 async def git(ctx):
@@ -234,7 +246,11 @@ async def git(ctx):
 
 @bot.command()
 async def tek_sayilar(ctx):
-    await ctx.send("Tek sayilar: 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,...")
+    await ctx.send("Tek sayılar: 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,...")
+
+@bot.command()
+async def cift_sayilar(ctx):
+    await ctx.send("Çift sayılar: 0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,...")
 
 @bot.command()
 async def masayi_duzenle(ctx):
@@ -283,6 +299,10 @@ async def depo(ctx):
 @bot.command()
 async def yapımcı(ctx):
     await ctx.send("https://github.com/gtaha23/gtaha23/blob/main/README.md bağlantısı sizi Yapımcıya yölendirebilir!")
+
+@bot.command()
+async def depoyardım(ctx):
+    await ctx.send("https://github.com/gtaha23/python_pro/blob/main/README.md işinizi görecektir.")
 
 @bot.command()
 async def sağol(ctx):
