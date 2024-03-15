@@ -15,7 +15,7 @@ async def on_ready():
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send("İşte beni çağırmak için kodlar: ?tehlikeli_atik, ?cevre_dostu, ?en_yuksek, ?en_dusuk, ?tarih, ?cevre, ?yenilenemez, ?hava_kirliliği, ?toprak_kirliliği ve ?yardım")
+    await ctx.send("İşte beni çağırmak için kodlar: ?tehlikeli_atik, ?cevre_dostu, ?en_yuksek, ?en_dusuk, ?tarih, ?cevre, ?yenilenemez, ?hava_kirliligi, ?toprak_kirliligi, ?isik_kirliligi, ?gurultu_kirliligi ve ?yardim")
 
 @bot.command()
 async def tehlikeli_atik(ctx):
@@ -50,12 +50,20 @@ async def yenilenemez(ctx):
     await ctx.send("Yenilenemez enerji kaynakları: Kömür, Doğalgaz, Petrol,...")
 
 @bot.command()
-async def hava_kirliliği(ctx):
+async def hava_kirliligi(ctx):
     await ctx.send("Hava kirliliği, havanın doğal bileşiminin çeşitli nedenlerle değişmesi, havada katı, sıvı ve gaz şeklindeki yabancı maddelerin insan sağlığına, canlı hayatına, ekolojik dengeye ve eşyalara zararlı olabilecek derişim ve sürede bulunmasıdır.")
 
 @bot.command()
-async def toprak_kirliliği(ctx):
+async def toprak_kirliligi(ctx):
     await ctx.send("Toprak kirliliği, katı, sıvı ve radyoaktif artık ve kirleticiler tarafından toprağın fiziksel ve kimyasal özelliklerinin bozulmasıdır. Topraklarda meydana gelecek tüm olumsuz değişimler insan yaşamını kuvvetle etkileyecek güce sahiptir.")
+
+@bot.command()
+async def isik_kirliligi(ctx):
+    await ctx.send("Işık kirliliği, ışığın canlıları rahatsız edecek şekilde yanlış kullanılmasıdır. Yanlış yönde, yanlış miktarda, yanlış yerde, aydınlatılması gerekmeyen yerde ışık kullanımı hem ekonomik kayıp hem de rahatsız edici bir durumdur.")
+
+@bot.command()
+async def gurultu_kirliligi(ctx):
+    await ctx.send("Gürültü kirliliği veya diğer adıyla ses kirliliği, insan veya hayvan yaşamını olumsuz etkileyen, dengesini bozan her türlü insan, hayvan ya da makine kaynaklı ses oluşumudur.")
 
 @bot.command()
 async def cevre(ctx):
