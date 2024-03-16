@@ -14,8 +14,8 @@ async def on_ready():
     print(f'{bot.user} olarak giriş yaptık')
 
 @bot.command()
-async def yardım(ctx):
-    await ctx.send("İşte beni çağırmak için kodlar: ?tehlikeli_atik, ?cevre_dostu, ?en_yuksek, ?en_dusuk, ?tarih, ?cevre, ?yenilenemez, ?hava_kirliligi, ?toprak_kirliligi, ?isik_kirliligi, ?gurultu_kirliligi ve ?yardim")
+async def yardim(ctx):
+    await ctx.send("İşte beni çağırmak için kodlar: ?tehlikeli_atik, ?cevre_dostu, ?en_yuksek, ?en_dusuk, ?tarih, ?cevre, ?yenilenemez, ?hava_kirliligi, ?toprak_kirliligi, ?isik_kirliligi, ?gurultu_kirliligi, ?goruntu_kirliligi, ?cevre_cesitleri ve ?yardim")
 
 @bot.command()
 async def tehlikeli_atik(ctx):
@@ -64,6 +64,14 @@ async def isik_kirliligi(ctx):
 @bot.command()
 async def gurultu_kirliligi(ctx):
     await ctx.send("Gürültü kirliliği veya diğer adıyla ses kirliliği, insan veya hayvan yaşamını olumsuz etkileyen, dengesini bozan her türlü insan, hayvan ya da makine kaynaklı ses oluşumudur.")
+
+@bot.command()
+async def goruntu_kirliligi(ctx):
+    await ctx.send("Görüntü kirliliği, insan faaliyetleri ve çevresini tahrip etmesi ile oluşan çirkin görüntü ve düzensizlikleri ifade eder.")
+
+@bot.command()
+async def cevre_cesitleri(ctx):
+    await ctx.send("Çevre kirliliği çeşitleri genel olarak; hava kirliliği, su kirliliği, toprak kirliliği, gürültü kirliliği ve görüntü kirliliği olarak sınıflandırılır.")
 
 @bot.command()
 async def cevre(ctx):
