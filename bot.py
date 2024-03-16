@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub ve /yardım')
 
 @bot.command()
 async def tester(ctx):
@@ -153,6 +153,7 @@ async def espri(ctx):
         picture = discord.File(f)
     await ctx.send(file=picture)
 
+
 @bot.command()
 async def espri_nadirlik(ctx):
     await ctx.send("espri4: En yaygın espri3: Yaygın espri1: Nadir espri3: Çok Nadir")
@@ -216,9 +217,17 @@ async def sifre(ctx):
 async def ters_masa(ctx):
     await ctx.send("(╯°□°）╯︵ ┻━┻")
 
+@bot.command(name = "GitHub")
+async def gh(ctx):
+    await ctx.send("GitHub insanların yazılım dili kodlarını paylaşıp yazılımlar hakkında bilgi edindiği bir platformdur.")
+
 @bot.command()
 async def ben_bilmem(ctx):
     await ctx.send("¯\_(ツ)_/¯")
+
+@bot.command(name = "Bot")
+async def robot(ctx):
+    await ctx.send("Botlar discord'da kullanıcılara asistanlık ve yardım etmek için oluşturuldu. Python diliyle bir bot yazabilirsiniz!")
 
 @bot.command()
 async def csgo(ctx):
@@ -242,11 +251,11 @@ async def kurallar(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 57 komut vardır.(İlerideki hedef 60)")
+    await ctx.send("Şuanda 59 komut vardır.(İlerideki hedef 60)")
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: takipçi_sayisi komutu eklendi 🥳 ve komut sayısı 57 oldu 📢.")
+    await ctx.send("En son güncelleme: GithHub,Bot,Discord komutları eklendi 🥳 ve komut sayısı 59 oldu 📢.")
 
 @bot.command()
 async def git(ctx):
@@ -283,8 +292,12 @@ async def youtube(ctx):
 @bot.command()
 async def destek(ctx):
     await ctx.send("https://www.youtube.com/channel/UCQe6Kt2hyfFhaDL3lhwM9PQ ve https://github.com/gtaha23 hesaplarını takip ederek bize destek edebilirsiniz.")
-
+ 
 @bot.command()
+async def RobotTom(ctx):
+    await ctx.send("https://hub.kodland.org/en/project/226311")
+
+@bot.command(name = "Discord")
 async def dc(ctx):
     await ctx.send("Discord'a hoşgeldin ben Gt_Bot!")
 
@@ -378,6 +391,7 @@ async def bovcx(ctx):
 
 @bot.command()
 async def tarih(ctx):
-    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.")  
+    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.") 
+
 
 bot.run("token")
