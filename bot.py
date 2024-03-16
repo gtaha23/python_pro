@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /fetosaray, /client, /basic, /tester, /depoyardım, cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /dc, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi ve /yardım')
 
 @bot.command()
 async def tester(ctx):
@@ -246,7 +246,7 @@ async def komut_sayisi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: güncellemeler komutu eklendi 🥳 ve komut sayısı 57 oldu 📢.")
+    await ctx.send("En son güncelleme: takipçi_sayisi komutu eklendi 🥳 ve komut sayısı 57 oldu 📢.")
 
 @bot.command()
 async def git(ctx):
@@ -321,8 +321,8 @@ async def sağol(ctx):
     await ctx.send("Size hizmet etmek bir zevkti!")
 
 @bot.command()
-async def fetosaray(ctx):
-    await ctx.send("https://tenor.com/view/be%C5%9Fikta%C5%9F-besiktas-cenk-tosun-rosier-ghezzal-gif-17552552850292197724")
+async def takipçi_sayisi(ctx):
+    await ctx.send("Yapımcının takipçi sayısı: 0")
 
 @bot.command()
 async def client(ctx):
