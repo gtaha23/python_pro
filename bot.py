@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım ve /yardım')
 
 @bot.command()
 async def tester(ctx):
@@ -246,6 +246,10 @@ async def csgo(ctx):
     await ctx.send("⚔️Super muper vor geym yeaa")
 
 @bot.command()
+async def yazılım(ctx):
+    await ctx.send("Bazı yazılım dilleri: Python,C++,C#,C,Java,JavaScript,BASIC,Ruby,HTML,CSS,...")
+
+@bot.command()
 async def mercan(ctx):
     await ctx.send("Mercan! abisinin tatlış kedisi, nasılsın?")
 
@@ -263,7 +267,7 @@ async def kurallar(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 61 komut vardır.(İlerideki hedef 65)")
+    await ctx.send("Şuanda 65 komut vardır.(İlerideki hedef 70)")
 
 @bot.command()
 async def pi(ctx):
@@ -271,7 +275,15 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: pi ve sike komutları eklendi 🥳 ve komut sayısı 61 oldu 📢.")
+    await ctx.send("En son güncelleme: kod_uygulama ve yazılım komutları eklendi 🥳 ve komut sayısı 65 oldu 📢.")
+
+@bot.command()
+async def discord_yenilikleri(ctx):
+    await ctx.send("Discord sunucumuzdaki yenilikler: Takipçi rolü eklendi ve bu sayede botumuzun yeniliklerini takip etmek isteyenler sunucuya gelebilir!")
+
+@bot.command()
+async def discord_sunucu(ctx):
+    await ctx.send("İşte Gt_Bot™'nin sunucusu! : https://discord.gg/Zewtmpwu")
 
 @bot.command()
 async def git(ctx):
@@ -280,6 +292,10 @@ async def git(ctx):
 @bot.command()
 async def uzun_kelime(ctx):
     await ctx.send("'Çekoslovakyalalılaştıramadıklarımızdanmısınız' kelimesi en uzun kelimedir.") 
+
+@bot.command()
+async def kod_uygulama(ctx):
+    await ctx.send("Yazarımın kullandığı uygulama: Microsoft Visual Studio Code (VS Code)")
 
 @bot.command()
 async def tek_sayilar(ctx):
@@ -412,6 +428,5 @@ async def bovcx(ctx):
 @bot.command()
 async def tarih(ctx):
     await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.") 
-
 
 bot.run("token")
