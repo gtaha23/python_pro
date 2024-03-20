@@ -25,7 +25,7 @@ async def heh(ctx, count_heh = 5):
     else:    
         await ctx.send("he" * count_heh)
 
-@bot.command(name='Gökhan')
+@bot.command(name='Taha')
 async def gökhan(ctx):
     await ctx.send('Ooo kimler gelmiş! selam yazar!')
 
@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w ve /yardım')
 
 @bot.command()
 async def tester(ctx):
@@ -52,6 +52,10 @@ async def bilgi(ctx):
 @bot.command(name='Malike')
 async def annem(ctx):
     await ctx.send('Çok güzel bir isim! acaba kim.')
+
+@bot.command(name = 'Gökhan')
+async def baba(ctx):
+    await ctx.send("Ne ara kahraman isimlerini saymaya başladık?")
 
 @bot.command()
 async def emoji1(ctx):
@@ -266,8 +270,13 @@ async def kurallar(ctx):
     await ctx.send("Kurallar: 1.Saygılı olun 2.Botu boşyere kullanmayın 3.Yazılımcı olmak için botunuzu kurucuya gösterin 4.Botu geliştirmek için fikirlerinizi lütfen söyleyin")
 
 @bot.command()
+async def w(ctx):
+    await ctx.send("https://tenor.com/view/gigachad-chad-gif-20773266")
+
+
+@bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 65 komut vardır.(İlerideki hedef 70)")
+    await ctx.send("Şuanda 70 komut vardır.(İlerideki hedef 75)")
 
 @bot.command()
 async def pi(ctx):
@@ -275,15 +284,23 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: kod_uygulama ve yazılım komutları eklendi 🥳 ve komut sayısı 65 oldu 📢.")
-
+    await ctx.send("En son güncelleme: blackbox ve w komutları eklendi 🥳 ve komut sayısı 70 oldu 📢.")
+ 
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: Takipçi rolü eklendi ve bu sayede botumuzun yeniliklerini takip etmek isteyenler sunucuya gelebilir!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: Yapay zekaya örnek bir yazılımı /blackbox diyerek öğrenebiliyoruz ve /w diyerek gigachad gifi atabiliyoruz!")
 
 @bot.command()
 async def discord_sunucu(ctx):
     await ctx.send("İşte Gt_Bot™'nin sunucusu! : https://discord.gg/Zewtmpwu")
+
+@bot.command()
+async def kurucu(ctx):
+    await ctx.send("Kurucu: @gokhan2308")
+
+@bot.command()
+async def tokat(ctx, member: discord.Member):
+    await ctx.send(f'{member.name} tokatlandı ')
 
 @bot.command()
 async def git(ctx):
@@ -325,6 +342,10 @@ async def youtube(ctx):
 async def destek(ctx):
     await ctx.send("https://www.youtube.com/channel/UCQe6Kt2hyfFhaDL3lhwM9PQ ve https://github.com/gtaha23 hesaplarını takip ederek bize destek edebilirsiniz.")
  
+@bot.command()
+async def blackbox(ctx):
+    await ctx.send("Blackbox AI bir yazılım yapay zekadır ve size kod yazmada yardım eder. Bu botta birkaç deneme yapıldı 😅")
+
 @bot.command()
 async def RobotTom(ctx):
     await ctx.send("https://hub.kodland.org/en/project/226311")
