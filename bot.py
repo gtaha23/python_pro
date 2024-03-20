@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w ve /yardım')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS ve /yardım')
 
 @bot.command()
 async def tester(ctx):
@@ -254,6 +254,52 @@ async def yazılım(ctx):
     await ctx.send("Bazı yazılım dilleri: Python,C++,C#,C,Java,JavaScript,BASIC,Ruby,HTML,CSS,...")
 
 @bot.command()
+async def html(ctx):
+    await ctx.send("HTML yazılım dili web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir. Dilin son sürümü HTML5'tir. HTML, bir programlama dili olarak tanımlanamaz. Zira HTML kodlarıyla kendi başına çalışan bir program yazılamaz.")
+
+@bot.command()
+async def python(ctx):
+    await ctx.send("Python, nesne yönelimli, yorumlamalı, birimsel ve etkileşimli yüksek seviyeli bir programlama dilidir. Girintilere dayalı basit söz dizimi, dilin öğrenilmesini ve akılda kalmasını kolaylaştırır.")
+
+a = "C++"
+@bot.command()
+async def a(ctx):
+    await ctx.send("C++, Bell Laboratuvarlarından Bjarne Stroustrup tarafından 1979 yılından itibaren geliştirilmeye başlanmış, C'yi kapsayan ve çok paradigmalı, yaygın olarak kullanılan, genel amaçlı bir programlama dilidir.")
+
+@bot.command()
+async def C(ctx):
+    await ctx.send("C programlama dili, UNIX işletim sistemini geliştirmek için B dili kullanılarak üretilen bir programlama dilidir.")
+
+@bot.command()
+async def B(ctx):
+    await ctx.send("B programlama dili Ken Thompson ve Dennis Ritchie tarafından takriben 1969 yılında geliştirilmiş bir programlama dilidir.")
+
+@bot.command()
+async def D(ctx):
+    await ctx.send("D programlama dili, C++ dilinden daha yüksek seviyede ve hedef alınan işletim sistemiyle donanımlara göre uygulama yazılmasını kolaylaştıran bir sistem ve uygulama dilidir.")
+
+@bot.command()
+async def E(ctx):
+    await ctx.send("E, Mark S. Miller, Dan Bornstein, Douglas Crockford, Chip Morningstar ve Electric Communities'teki diğerleri tarafından 1997'de oluşturulmuş, güvenli dağıtılmış bilgi işlem için nesne yönelimli bir programlama dilidir.")
+
+b = "C#"
+@bot.command()
+async def b(ctx):
+    await ctx.send("C#; Microsoft tarafından .NET Teknolojisi için geliştirilen modern bir programlama dilidir. Sözdizimi C-like bir deneyim sunar. Microsoft tarafından geliştirilmiş olsa da ECMA ve ISO standartları altına alınmıştır. C programlama dilinde bir tam sayı değişkeni 1 artırmak için değişkenden sonra ++ eki kullanılır.")
+
+@bot.command()
+async def Ruby(ctx):
+    await ctx.send("Ruby, nesneye yönelik, dinamik, reflektif ve esnek bir programlama dilidir. Ruby dili, Yukihiro Matsumoto tarafından Japonya'da tasarlanmaya ve geliştirilmeye başlanmıştır.")
+
+@bot.command()
+async def BASIC(ctx):
+    await ctx.send("BASIC 1964'te John George Kemeny ve Thomas Eugene Kurtz tarafından New Hampshire, ABD'de icat edilmiş, günümüzde de çeşitli türevleri kullanılmakta olan yüksek düzey bir programlama dili. Farklı türevleri birçok işletim sisteminin parçası olarak sunulmuştur. BASIC öğrenmesi ve yazılımları kolay olan bir dildir.")
+
+@bot.command()
+async def CSS(ctx):
+    await ctx.send("Cascading Style Sheets, HTML'e ek olarak metin ve format biçimlendirme alanında fazladan olanaklar sunan bir işaretleme dilidir.")
+
+@bot.command()
 async def mercan(ctx):
     await ctx.send("Mercan! abisinin tatlış kedisi, nasılsın?")
 
@@ -276,7 +322,7 @@ async def w(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 70 komut vardır.(İlerideki hedef 75)")
+    await ctx.send("Şuanda 81 komut vardır.(İlerideki hedef 85)")
 
 @bot.command()
 async def pi(ctx):
@@ -284,11 +330,11 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: blackbox ve w komutları eklendi 🥳 ve komut sayısı 70 oldu 📢.")
+    await ctx.send("En son güncelleme: 10 tane yazılım dilini anlatan komutlsr eklendi 🥳 ve komut sayısı 80 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: Yapay zekaya örnek bir yazılımı /blackbox diyerek öğrenebiliyoruz ve /w diyerek gigachad gifi atabiliyoruz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 10 tane yazılım dilini anlatan komutlar geldi ve /yardım diyerek bunları görebiliriz!")
 
 @bot.command()
 async def discord_sunucu(ctx):
