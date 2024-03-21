@@ -35,7 +35,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardim(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver ve /yardim')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart ve /yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -282,6 +282,10 @@ async def git_saver(ctx):
     await ctx.send("Git bir yazılım dosyamızı github hesabımızdaki ddepoya otomatik olarak kaydeden uygulamadır.")
 
 @bot.command()
+async def anime(ctx):
+    await ctx.send("eFootball (PES)")
+
+@bot.command()
 async def yazarın_site(ctx):
     await ctx.send("gtaha'nın şuanlık sadece bir tane local web sitesi vardır ve bu sitenin html kodlarını buradan bulabilirsiniz: https://github.com/gtaha23/Kodland-HTML-web/tree/main")
 
@@ -336,6 +340,66 @@ async def CSS(ctx):
     await ctx.send("Cascading Style Sheets, HTML'e ek olarak metin ve format biçimlendirme alanında fazladan olanaklar sunan bir işaretleme dilidir.")
 
 @bot.command()
+async def SQL(ctx):
+    await ctx.send("SQL, verileri yönetmek ve tasarlamak için kullanılan bir dildir. SQL, kendi bir programlama dili olmamasına rağmen birçok kişi tarafından programlama dili olarak bilinir. SQL herhangi bir veri tabanı ortamında kullanılan bir alt dildir.")
+
+@bot.command()
+async def Assembly(ctx):
+    await ctx.send("Çevirme dili ya da assembly dili, bir bilgisayarda tüm işlemleri işlemci gerçekleştirir ve işlemcinin de, makine dili denen kendine has bir dili vardır. İşlemci yalnızca bu dili anlar ve bu dili kullanarak anlaşırsınız. Fakat bu dili öğrenmek ve kullanmak çok zordur.")
+
+@bot.command()
+async def php(ctx):
+    await ctx.send("PHP: Hypertext Preprocessor, internet için üretilmiş, sunucu taraflı, çok geniş kullanımlı, genel amaçlı, içerisine HTML gömülebilen betik ve programlama dilidir.")
+
+@bot.command()
+async def TS(ctx):
+    await ctx.send("TypeScript özgür ve açık kaynak kodlu programlama dili. Microsoft tarafından geliştirilmekte ve desteklenmekte olan TypeScript; bünyesinde barındırdığı derleyici sayesinde, yazılan kodu JavaScript koduna çevirir.")
+
+@bot.command()
+async def Rust(ctx):
+    await ctx.send("Rust; açık kaynak kodlu, çoklu paradigmalı, ilk olarak Mozilla tarafından dizayn edilen ve Rust Foundation tarafından geliştirilmekte olan; performansa, güvenliğe ve eş zamanlı işlem yapabilmeye odaklanmış bir sistem programlama dilidir.")
+
+@bot.command()
+async def Lua(ctx):
+    await ctx.send("Lua, ağırlıklı olarak gömülü sistemler ve istemciler için tasarlanmış hafif paralel bir programlama dilidir. Lua, ANSI C'de yazılmış olduğu için çapraz platform destekli bir dildir ve nispeten basit bir C API'sine sahiptir.")
+
+@bot.command()
+async def erlang(ctx):
+    await ctx.send("Erlang, Ericsson firması tarafından 1986'da Joe Armstrong, Robert Virding ve Mike Williams önderliğinde geliştirilen genel amaçlı, eş zamanlı, dinamik, fonksiyonel ve atık toplama özelliğine sahip olan bir dildir.")
+
+@bot.command()
+async def MATHLAB(ctx):
+    await ctx.send("MATLAB, çok paradigmalı sayısal hesaplama yazılımı ve dördüncü nesil programlama dilidir. Sahipli bir programlama dili olan MATLAB, MathWorks tarafından geliştirilmektedir.")
+
+@bot.command()
+async def Perl(ctx):
+    await ctx.send("Perl, bir dil bilimci olup NASA'da sistem yöneticisi olarak çalışan Larry Wall tarafından geliştirilmiş bir programlama dilidir.")
+
+@bot.command()
+async def Julia(ctx):
+    await ctx.send("Julia yüksek başarımlı üst düzey bir programlama dilidir. Nitelikli bir derleyici, dağıtık koşut yürütüm olanağı, sayısal hesaplamalarda yüksek doğruluk oranı ve geniş bir matematiksel işlev kütüphanesine sahip olan Julia'nın sözdizimi diğer yazılım geliştirme ortamlarında kullanılan dillerle benzerlik göstermektedir.")
+
+@bot.command()
+async def Swift(ctx):
+    await ctx.send("Swift, Apple tarafından iOS ve macOS platformlarına iOS ve Mac uygulamaları geliştirmek için oluşturulan, derlenerek çalışan güçlü ve kullanımı kolay, nesne yönelimli bir programlama dili.")
+
+@bot.command()
+async def Go(ctx):
+    await ctx.send("Go, Google'da 2007 yılından itibaren geliştirilmeye başlayan açık kaynak programlama dilidir. İlk web sitesi golang.org alan adına sahip olduğundan golang ismiyle anılsa da doğru adı Go'dur. Daha çok sistem programlama için tasarlanmış olup, derlenmiş ve statik tipli bir dildir. Kasım 2009'da çıkmıştır.")
+
+@bot.command()
+async def R(ctx):
+    await ctx.send("R, istatistiksel hesaplama ve grafikler için yazılım ortamı olup aynı zamanda programlama dilidir. R Foundation tarafından desteklenen ve GNU Tasarısının parçası olan bir özgür yazılımdır.")
+
+@bot.command()
+async def ObjC(ctx):
+    await ctx.send("Objective-C, C'nin üzerine yazılmış, yansımalı, nesne yönelimli bir programlama dilidir. ObjC, Objective C ve Obj-C olarak da anılır. Günümüzde OpenStep standardı üzerine kurulu olan macOS ve GNUstep işletim sistemlerinde kullanılmaktadır.")
+
+@bot.command()
+async def Dart(ctx):
+    await ctx.send("Dart, ilk kez Google tarafından geliştirilen ve daha sonraları ECMA tarafından standart haline getirilen açık kaynaklı ve genel-amaçlı bir programlama dilidir. Dart dili kullanılarak web, sunucu, mobil uygulamalar ve IoT cihazları geliştirilebilir.")
+
+@bot.command()
 async def mercan(ctx):
     await ctx.send("Mercan! abisinin tatlış kedisi, nasılsın?")
 
@@ -358,7 +422,7 @@ async def w(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 91 komut vardır.(İlerideki hedef 95)")
+    await ctx.send("Şuanda 106 komut vardır.(İlerideki hedef 110)")
 
 @bot.command()
 async def pi(ctx):
@@ -366,11 +430,11 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: 5 tane emoji ve /git_saver komutu eklendi 🥳 ve komut sayısı 91 oldu 📢.")
+    await ctx.send("En son güncelleme: 15 tane yazılım dili anlatım komutu eklendi 🥳 ve komut sayısı 106 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: 5 tane yeni emoji ve /git_saver komutları geldi ve /yardım diyerek bunları görebiliriz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 15 tane yazılım dili anlatma komutları geldi ve /yardım diyerek bunları görebiliriz!")
 
 @bot.command()
 async def discord_sunucu(ctx):
@@ -534,6 +598,6 @@ async def bovcx(ctx):
 
 @bot.command()
 async def tarih(ctx):
-    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.") 
+    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.")
 
 bot.run("token")
