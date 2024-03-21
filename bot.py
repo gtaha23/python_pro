@@ -34,8 +34,8 @@ async def katıldı(ctx, member: discord.Member):
     await ctx.send(f'{member.name} katıldı {discord.utils.format_dt(member.joined_at)}')
 
 @bot.command()
-async def yardım(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,PY), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS ve /yardım')
+async def yardim(ctx):
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen ve /yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -136,6 +136,26 @@ async def emoji19(ctx):
 @bot.command()
 async def emoji20(ctx):
     await ctx.send("\U0001F435") 
+
+@bot.command()
+async def emoji21(ctx):
+    await ctx.send("\U0001F493")
+
+@bot.command()
+async def emoji22(ctx):
+    await ctx.send("\U0001F460")
+
+@bot.command()
+async def emoji23(ctx):
+    await ctx.send("\U0001F687")
+
+@bot.command()
+async def emoji24(ctx):
+    await ctx.send("\U0001F479")
+
+@bot.command()
+async def emoji25(ctx):
+    await ctx.send("\U0001F987")
 
 @bot.command()
 async def emojiPY(ctx):
@@ -258,6 +278,18 @@ async def html(ctx):
     await ctx.send("HTML yazılım dili web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir. Dilin son sürümü HTML5'tir. HTML, bir programlama dili olarak tanımlanamaz. Zira HTML kodlarıyla kendi başına çalışan bir program yazılamaz.")
 
 @bot.command()
+async def yazarın_site(ctx):
+    await ctx.send("gtaha'nın şuanlık sadece bir tane local web sitesi vardır ve bu sitenin html kodlarını buradan bulabilirsiniz: https://github.com/gtaha23/Kodland-HTML-web/tree/main")
+
+@bot.command()
+async def CaseOh(ctx):
+    await ctx.send("Sakin dostum... tüm pizzalar senin olabilir sakin!")
+
+@bot.command()
+async def KinitoPet(ctx):
+    await ctx.send("Beni affeder misin?.... arkadaşım.... (kapanır)")
+
+@bot.command()
 async def python(ctx):
     await ctx.send("Python, nesne yönelimli, yorumlamalı, birimsel ve etkileşimli yüksek seviyeli bir programlama dilidir. Girintilere dayalı basit söz dizimi, dilin öğrenilmesini ve akılda kalmasını kolaylaştırır.")
 
@@ -322,7 +354,7 @@ async def w(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 81 komut vardır.(İlerideki hedef 85)")
+    await ctx.send("Şuanda 90 komut vardır.(İlerideki hedef 95)")
 
 @bot.command()
 async def pi(ctx):
@@ -330,11 +362,11 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: 10 tane yazılım dilini anlatan komutlsr eklendi 🥳 ve komut sayısı 80 oldu 📢.")
+    await ctx.send("En son güncelleme: 5 tane emoji komutu eklendi 🥳 ve komut sayısı 90 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: 10 tane yazılım dilini anlatan komutlar geldi ve /yardım diyerek bunları görebiliriz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 5 tane yeni emoji geldi ve /yardım diyerek bunları görebiliriz!")
 
 @bot.command()
 async def discord_sunucu(ctx):
@@ -443,6 +475,10 @@ async def takipçi_sayisi(ctx):
 @bot.command()
 async def client(ctx):
     await ctx.send("Client sınıfı basit bir discord botu oluşturmak için idealdir")
+
+@bot.command()
+async def emojikitchen(ctx):
+    await ctx.send("https://www.google.com/search?client=opera&q=emoji+kitchen&sourceid=opera&ie=UTF-8&oe=UTF-8")
 
 @bot.command()
 async def basic(ctx):
