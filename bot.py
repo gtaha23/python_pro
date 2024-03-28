@@ -36,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardim(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal ve /yardim')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım ve /yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -287,6 +287,10 @@ async def html(ctx):
 @bot.command()
 async def git_saver(ctx):
     await ctx.send("Git bir yazılım dosyamızı github hesabımızdaki ddepoya otomatik olarak kaydeden uygulamadır.")
+
+@bot.command()
+async def bildigim_yazılım(ctx):
+    await ctx.send("Bu botun yazarının bildiği yazılım dilleri: Python, Lua, HTML, CSS, C. Merak edenler için Lua ve C dillerinde en basit kodları yazabiliyor (Eğitim eksikliğinden)")
 
 @bot.command()
 async def pes(ctx):
@@ -568,6 +572,10 @@ async def PyGame(ctx):
     await ctx.send("PyGame python'un oyun yapmak için kullanılan bir kütüphanedir. Daha pratik ve kısa oyunlar için pgzero kullanılır.")
 
 @bot.command()
+async def Delphi(ctx):
+    await ctx.send("Delphi, Object Pascal'ı temel alan bir olaya dayalı programlama dili ve masaüstü, mobil, web ve konsol yazılımları için tümleşik geliştirme ortamıdır. Delphi, 2008 yılından beri Embarcadero Technologies tarafından geliştirilmektedir.")
+
+@bot.command()
 async def mercan(ctx):
     await ctx.send("Mercan! abisinin tatlış kedisi, nasılsın?")
 
@@ -587,10 +595,9 @@ async def kurallar(ctx):
 async def w(ctx):
     await ctx.send("https://tenor.com/view/gigachad-chad-gif-20773266")
 
-
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 150 komut vardır.(İlerideki hedef 155)")
+    await ctx.send("Şuanda 147 (Sayım hatası vardı) komut vardır.(İlerideki hedef 150)")
 
 @bot.command()
 async def pi(ctx):
@@ -598,7 +605,7 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: hayal komutu eklendi 🥳 ve komut sayısı 150 oldu 📢.")
+    await ctx.send("En son güncelleme: /arkadaş komutu eklendi 🥳 ve komut sayısı 147 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
@@ -615,6 +622,14 @@ async def discord_sunucu(ctx):
 @bot.command()
 async def python_sunucu(ctx):
     await ctx.send("Python sunucumuza katılmayı unutmayın! İşte Linki: https://discord.gg/9k2sUHk2")
+
+@bot.command()
+async def Atatürk(ctx):
+    await ctx.send("Ulu önder Mustafa Kemal Atatürk. Ruhu şad olsun o7")
+
+@bot.command()
+async def arkadaş(ctx):
+    await ctx.send("Yapımcımın bazı arkadaşları: JR, Ariyonix, eotra, Shenhe, Semih Vatansever,...")
 
 @bot.command()
 async def kurucu(ctx):
