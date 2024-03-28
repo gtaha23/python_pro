@@ -36,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardim(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım ve /yardim')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5) ve /yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -78,7 +78,7 @@ async def emoji3(ctx):
 
 @bot.command()
 async def emoji4(ctx):
-    await ctx.send("\U0001F923")
+    await ctx.send("\U0001F923") 
 
 @bot.command()
 async def emoji5(ctx):
@@ -163,6 +163,26 @@ async def emoji24(ctx):
 @bot.command()
 async def emoji25(ctx):
     await ctx.send("\U0001F987")
+
+@bot.command()
+async def emoji26(ctx):
+    await ctx.send("\U0001F069")
+
+@bot.command()
+async def emoji27(ctx):
+    await ctx.send("\U0001F001")
+
+@bot.command()
+async def emoji28(ctx):
+    await ctx.send("\U0001F002")
+
+@bot.command()
+async def emoji29(ctx):
+    await ctx.send("\U0001F003")
+
+@bot.command()
+async def emoji30(ctx):
+    await ctx.send("\U0001F004")
 
 @bot.command()
 async def emojiPY(ctx):
@@ -597,7 +617,7 @@ async def w(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 147 (Sayım hatası vardı) komut vardır.(İlerideki hedef 150)")
+    await ctx.send("Şuanda 157 (Sayım hatası vardı) komut vardır.(İlerideki hedef 160)")
 
 @bot.command()
 async def pi(ctx):
@@ -605,11 +625,31 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: /arkadaş komutu eklendi 🥳 ve komut sayısı 147 oldu 📢.")
+    await ctx.send("En son güncelleme: 10 tane yeni komut eklendi 🥳 ve komut sayısı 157 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: 1 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 10 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
+
+@bot.command()
+async def facts(ctx):
+    await ctx.send("Bir bulutun ağırlığı yaklaşık bir milyon tondur")
+
+@bot.command()
+async def facts2(ctx):
+    await ctx.send("Zürafaların yıldırım çarpması olasılığı insanlara göre 30 kat daha fazladır.")    
+
+@bot.command()
+async def facts3(ctx):
+    await ctx.send("Tek yumurta ikizleri aynı parmak izlerine sahip değildir.")
+
+@bot.command()
+async def facts4(ctx):
+    await ctx.send("Dünyanın dönüş hızı değişiyor.")
+
+@bot.command()
+async def facts5(ctx):
+    await ctx.send("Beyniniz sürekli kendini yiyor.")
 
 @bot.command()
 async def hayal(ctx):
