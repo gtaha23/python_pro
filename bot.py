@@ -322,7 +322,7 @@ async def fifa(ctx):
 
 @bot.command()
 async def yazarın_site(ctx):
-    await ctx.send("gtaha'nın şuanlık sadece bir tane local web sitesi vardır ve bu sitenin html kodlarını buradan bulabilirsiniz: https://github.com/gtaha23/Kodland-HTML-web/tree/main")
+    await ctx.send("gtaha'nın şuanlık sadece bir tane local web sitesi vardır ve bu sitenin html kodlarını buradan bulabilirsiniz: https://github.com/gtaha23/Kodland-HTML/tree/main")
 
 @bot.command()
 async def CaseOh(ctx):
@@ -617,7 +617,7 @@ async def w(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 157 (Sayım hatası vardı) komut vardır.(İlerideki hedef 160)")
+    await ctx.send("Şuanda 158 (Sayım hatası vardı) komut vardır.(İlerideki hedef 160)")
 
 @bot.command()
 async def pi(ctx):
@@ -625,11 +625,15 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: 10 tane yeni komut eklendi 🥳 ve komut sayısı 157 oldu 📢.")
+    await ctx.send("En son güncelleme: 1 tane yeni komut eklendi 🥳 ve komut sayısı 158 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
     await ctx.send("Discord sunucumuzdaki yenilikler: 10 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
+
+@bot.command()
+async def github_py(ctx):
+    await ctx.send("Yazarın python kodlarını bu github deposundan bulabilirsiniz: https://github.com/gtaha23/python_pro")
 
 @bot.command()
 async def facts(ctx):
@@ -769,7 +773,7 @@ async def sağol(ctx):
 
 @bot.command()
 async def takipçi_sayisi(ctx):
-    await ctx.send("Yapımcının takipçi sayısı: 0")
+    await ctx.send("Yapımcının takipçi sayısı: 1")
 
 @bot.command()
 async def client(ctx):
