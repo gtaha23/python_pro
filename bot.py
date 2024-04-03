@@ -36,7 +36,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardim(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5) ve /yardim')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5), /github_py ve /yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -298,7 +298,7 @@ async def csgo(ctx):
 
 @bot.command()
 async def yazılım(ctx):
-    await ctx.send("Bazı yazılım dilleri: Python,C++,C#,C,Java,JavaScript,BASIC,Ruby,HTML,CSS,...")
+    await ctx.send("Bazı yazılım dilleri: Python,C++,C#,C,Java,JavaScript,BASIC,Ruby,HTML,CSS,Shell,...")
 
 @bot.command()
 async def html(ctx):
@@ -629,7 +629,7 @@ async def guncellemeler(ctx):
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: 10 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 1 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
 
 @bot.command()
 async def github_py(ctx):
@@ -696,6 +696,10 @@ async def kod_uygulama(ctx):
     await ctx.send("Yazarımın kullandığı uygulama: Microsoft Visual Studio Code (VS Code)")
 
 @bot.command()
+async def bişey(ctx):
+    await ctx.send("“Bir şey” kelimesi, Türkçe dilinde genellikle belirli bir konu veya nesne üzerine odaklanmayı gerektiren durumlarda kullanılır. İki ayrı kelimeden oluşur: “bir” ve “şey”. “Bir”, Türkçede belirli bir miktar veya sayıyı ifade eder ve genellikle çoğunlukla tek olan nesne veya durumları vurgulamak için kullanılır.")
+
+@bot.command()
 async def tek_sayilar(ctx):
     await ctx.send("Tek sayılar: 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,...")
 
@@ -736,6 +740,10 @@ async def dc(ctx):
     await ctx.send("Discord'a hoşgeldin ben Gt_Bot!")
 
 @bot.command()
+async def AI(ctx):
+    await ctx.send("Yapay zekâ ya da kısaca YZ, (İngilizce: Artificial intelligence ya da kısaca AI), insanlar da dahil olmak üzere hayvanlar tarafından, doğal zekânın aksine makineler tarafından görüntülenen zekâ çeşididir. İlk ve ikinci kategoriler arasındaki ayrım genellikle seçilen kısaltmayla ortaya çıkar. Güçlü yapay zeka genellikle Yapay genel zekâ (İngilizce: Artificial General Intelligence kelimelerinin kısaltılmışı olarak: AGI) olarak etiketlenirken, doğal zekayı taklit etme girişimleri yapay biyolojik zeka (İngilizce: Artificial Biological Intelligence: ABI) olarak adlandırılır.")
+
+@bot.command()
 async def don_pollo(ctx):
     await ctx.send("EL QUE QUEIRA PERDE SO TİEMPO QE ENTRA YA A Mİ PERFİL ")
 
@@ -773,7 +781,7 @@ async def sağol(ctx):
 
 @bot.command()
 async def takipçi_sayisi(ctx):
-    await ctx.send("Yapımcının takipçi sayısı: 1")
+    await ctx.send("Yapımcının takipçi sayısı: 2")
 
 @bot.command()
 async def client(ctx):
