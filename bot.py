@@ -617,7 +617,7 @@ async def w(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 158 (Sayım hatası vardı) komut vardır.(İlerideki hedef 160)")
+    await ctx.send("Şuanda 159 (Sayım hatası vardı) komut vardır.(İlerideki hedef 160)")
 
 @bot.command()
 async def pi(ctx):
