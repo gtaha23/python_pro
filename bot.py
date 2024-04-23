@@ -7,6 +7,7 @@ import requests
 import time
 
 intents = discord.Intents.default()
+
 intents.message_content = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
@@ -36,7 +37,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardim(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5), /github_py, /bişey, /etkinlikler, /AmericanLife ve /yardim')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5), /github_py, /bişey, /etkinlikler, /AmericanLife, /Scratch, /Shell, /popular_shells, /bash, /csh, /ksh, /tcsh, /zhs, /duolingo, /StarWars ve /yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -600,6 +601,54 @@ async def Delphi(ctx):
     await ctx.send("Delphi, Object Pascal'ı temel alan bir olaya dayalı programlama dili ve masaüstü, mobil, web ve konsol yazılımları için tümleşik geliştirme ortamıdır. Delphi, 2008 yılından beri Embarcadero Technologies tarafından geliştirilmektedir.")
 
 @bot.command()
+async def Scratch(ctx):
+    await ctx.send("Scratch, ABD’de bulunan MIT’in (Massachusetts Teknoloji Enstitüsü) geliştirdiği, 8-16 yaş arası çocukların kullanımına göre tasarlanmış ve basit bir arayüze sahip bir programlama dilidir.[2] Geleneksel programlama dillerinin aksine kullanıcı, istediği fonksiyonları fareyle tıklayıp sürükleyerek animasyonlar, oyunlar yaratabilir.")
+
+@bot.command()
+async def Shell(ctx):
+    await ctx.send("Kabuk programlama (İngilizce: shell programming), Unix ve benzeri sistemlerde sistem yönetimini sağlayan komutlar ve bu komutları işlemeye yarayan kontrol mekanizmalarının bulunduğu programlama şeklidir.")
+
+@bot.command()
+async def popular_shells(ctx):
+    await ctx.send("En çok bilinen kabuklar: bash(Bourne Again Shell), csh(C-Shell), ksh, sh, tcsh, zsh.")
+
+@bot.command()
+async def bash(ctx):
+    await ctx.send("Bash, Brian Fox tarafından GNU Projesi için Bourne kabuğuna özgür yazılım alternatifi olarak yazılmış, Unix ve benzeri işletim sistemlerinde kullanılan komut satırı kabuğu ve bu kabuğun betik dilidir. GNU Tasarısı'nın parçasıdır ve birçok GNU/Linux dağıtımında ön tanımlı kabuk olarak gelir.")
+
+@bot.command()
+async def csh(ctx):
+    await ctx.send("C Shell, 1970'lerin sonlarında Berkeley'deki California Üniversitesi'nde yüksek lisans öğrencisiyken Bill Joy tarafından yaratılan bir Unix kabuğudur. Joy'un ilk olarak 1978'de dağıttığı Berkeley Software Distribution'ın 2BSD sürümünden başlayarak geniş çapta dağıtıldı.")
+
+@bot.command()
+async def ksh(ctx):
+    await ctx.send("KornShell(ksh), 1980'lerin başında David Korn tarafından Bell Laboratuvarlarında geliştirilen ve 14 Temmuz 1983'te USENIX'te duyurulan bir Unix kabuğudur. İlk geliştirme, Bourne kabuğu kaynak koduna dayanıyordu.")
+
+@bot.command()
+async def sh(ctx):
+    await ctx.send("Unix shell (tr. Unix kabuğu), Unix benzeri işletim sistemleri için bir komut satırı kullanıcı arabirimi sağlayan bir komut satırı yorumlayıcısı veya kabuğudur. Kabuk, hem etkileşimli bir komut dili hem de bir komut dosyası dilidir ve işletim sistemi tarafından sistemin kabuk komut dosyalarını kullanarak yürütülmesini kontrol etmek için kullanılır.")
+
+@bot.command()
+async def tcsh(ctx):
+    await ctx.send("Tcsh, C kabuğuna(csh) temelli ve geriye dönük uyumlu bir Unix kabuğudur.")
+
+@bot.command()
+async def zsh(ctx):
+    await ctx.send("Zsh(Z kabuğu), etkileşimli oturum açma kabuğu ve kabuk betikleri oluşturmak için komut yorumlayıcısı olarak kullanılabilen bir Unix kabuğudur. Bash, ksh ve tcsh'nin bazı özelliklerinin yanı sıra, birçok iyileştirme içeren, genişletilmiş bir Bourne kabuğudur.")
+
+@bot.command()
+async def plankalkül(ctx):
+    await ctx.send("Plankalkül icat edilmiş ilk programlama dilidir. 1940'larda Konrad Zuse tarafından tasarlanmış, ancak 1972'ye kadar kamuya açıklanmamış ve 1998'e kadar kullanılmamıştır.")
+
+@bot.command()
+async def duolingo(ctx):
+    await ctx.send("İngilizce dersini yapmayı unutma, yoksa aileni kaçırırım...")
+
+@bot.command()
+async def StarWars(ctx):
+    await ctx.send("https://youtu.be/Bv1LVYtdGGo?list=RDBv1LVYtdGGo Bunu izlemelisin dostum!")
+
+@bot.command()
 async def mercan(ctx):
     await ctx.send("Mercan! abisinin tatlış kedisi, nasılsın?")
 
@@ -620,8 +669,12 @@ async def w(ctx):
     await ctx.send("https://tenor.com/view/gigachad-chad-gif-20773266")
 
 @bot.command()
+async def ohio(ctx):
+    await ctx.send("https://tenor.com/view/spam-spongebob-meme-mr-krabs-mr-krabs-meme-table-gif-7910338758662995384")
+
+@bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 161 (Sayım hatası vardı) komut vardır.(İlerideki hedef 165)")
+    await ctx.send("Şuanda 175 komut vardır.(İlerideki hedef 180)")
 
 @bot.command()
 async def pi(ctx):
@@ -629,11 +682,11 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: 2 tane yeni komut eklendi 🥳 ve komut sayısı 161 oldu 📢.")
+    await ctx.send("En son güncelleme: 1 tane yeni komut eklendi 🥳 ve komut sayısı 175 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: 2 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 1 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
 
 @bot.command()
 async def github_py(ctx):
@@ -658,6 +711,14 @@ async def facts4(ctx):
 @bot.command()
 async def facts5(ctx):
     await ctx.send("Beyniniz sürekli kendini yiyor.")
+
+@bot.command()
+async def version(ctx):
+    await ctx.send("Bu botun versiyonu: v1.21 (Bot oluşturulduğundan beri)")
+
+@bot.command()
+async def data_science(ctx):
+    await ctx.send("Veri bilimi, iş için anlamlı öngörüler ayıklamak amacıyla veriler üzerinde gerçekleştirilen çalışmaların adıdır1. Matematik, istatistik, yapay zeka ve bilgisayar mühendisliği gibi alanların ilke ve uygulamalarını bir araya getirerek büyük miktardaki verileri analiz eden, disiplinler arası bir yaklaşımdır1. Veri bilimcileri, ne olduğu, neden olduğu, ne olacağı ve sonuçlarla neler yapılabileceğini sormalarına ve bu soruları cevaplamalarına yardımcı olan analizleri yaparlar.")
 
 @bot.command()
 async def hayal(ctx):
