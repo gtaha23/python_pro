@@ -37,7 +37,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardim(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5), /github_py, /bişey, /etkinlikler, /AmericanLife, /Scratch, /Shell, /popular_shells, /bash, /csh, /ksh, /tcsh, /zhs, /duolingo, /StarWars ve /yardim')
+    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5), /github_py, /bişey, /etkinlikler, /AmericanLife, /Scratch, /Shell, /popular_shells, /bash, /csh, /ksh, /tcsh, /zhs, /duolingo, /StarWars, /png, /jpg, /jpeg, /svg, /webp ve /yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -674,7 +674,7 @@ async def ohio(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 175 komut vardır.(İlerideki hedef 180)")
+    await ctx.send("Şuanda 180 komut vardır.(İlerideki hedef 185)")
 
 @bot.command()
 async def pi(ctx):
@@ -682,11 +682,11 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: 1 tane yeni komut eklendi 🥳 ve komut sayısı 175 oldu 📢.")
+    await ctx.send("En son güncelleme: 5 tane yeni komut eklendi 🥳 ve komut sayısı 180 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: 1 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 5 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
 
 @bot.command()
 async def github_py(ctx):
@@ -714,11 +714,31 @@ async def facts5(ctx):
 
 @bot.command()
 async def version(ctx):
-    await ctx.send("Bu botun versiyonu: v1.21 (Bot oluşturulduğundan beri)")
+    await ctx.send("Bu botun versiyonu: v1.22")
 
 @bot.command()
 async def data_science(ctx):
     await ctx.send("Veri bilimi, iş için anlamlı öngörüler ayıklamak amacıyla veriler üzerinde gerçekleştirilen çalışmaların adıdır1. Matematik, istatistik, yapay zeka ve bilgisayar mühendisliği gibi alanların ilke ve uygulamalarını bir araya getirerek büyük miktardaki verileri analiz eden, disiplinler arası bir yaklaşımdır1. Veri bilimcileri, ne olduğu, neden olduğu, ne olacağı ve sonuçlarla neler yapılabileceğini sormalarına ve bu soruları cevaplamalarına yardımcı olan analizleri yaparlar.")
+
+@bot.command()
+async def png(ctx):
+    await ctx.send("PNG, 'Taşınabilir Ağ Grafiği' anlamındaki (Portable Network Graphics) 'in kısaltmasıdır ve kayıpsız sıkıştırarak görüntü saklamak için kullanılan bir saklama biçimidir.")
+
+@bot.command()
+async def jpg(ctx):
+    await ctx.send("JPG Kayıplı olarak sıkıştırılmış bir resim dosyası uzantısıdır. JPG açılımı Joint Photographic Eperts Group şeklindir. JPG özellikle fotoğraflar için en çok kullanılan kayıplı dosya uzantılarından biridir.")
+
+@bot.command()
+async def jpeg(ctx):
+    await ctx.send("JPEG standardında görüntü saklayan dosya biçimi de çoğunluk tarafından JPEG olarak adlandırılır. Bu dosyalar genellikle .jpg, .jpe ya da .jfif uzantılıdır, ancak çoğunlukla .jpg uzantısı kullanılır.")
+
+@bot.command()
+async def svg(ctx):
+    await ctx.send("Ölçeklenebilir Vektör Grafikleri(SVG/.svg) 1999 yılından bu yana W3C Konsorsiyumu tarafından geliştirilen açık standart XML tabanlı bir vektörel grafik biçimidir.")    
+
+@bot.command()
+async def webp(ctx):
+    await ctx.send("WebP, Google tarafından geliştirilmiş olup, JPEG, PNG veya GIF resim biçimlerine kıyasla daha küçük veya daha iyi görünen resimler oluşturmak için tasarlanmıştır.")
 
 @bot.command()
 async def hayal(ctx):
