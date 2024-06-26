@@ -10,7 +10,7 @@ intents = discord.Intents.default()
 
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='/', intents=intents)
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
@@ -37,7 +37,7 @@ async def katıldı(ctx, member: discord.Member):
 
 @bot.command()
 async def yardim(ctx):
-    await ctx.send('İşte beni çağırmak için kodlar: /selam, /heh, /Gökhan, /Taha, /katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), /Gt_Bot, /Malike(anneme özel kod), /emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), /sifre(rastgele şifre oluşturur), /depo, /sağol, /milliyetçi, /yakala, /tay, /yapımcı, /mem, /mem_nadirlik, /ördek, /kedi, /köpek, /tilki, /bovcx, /santıranç, /babapiro, /bruv, /Benzema, /tarih, /ters_masa, /ben_bilmem, /csgo, /mercan, /iletişim, /git, /tek_sayilar, /masayi_duzenle, /espri, /espri_nadirlik, /bilgi, /yazılım_dili, /Discord, /don_pollo, /tl, /alman_kedy, /kurallar, /komut_sayisi, /youtube, /destek, /kodland, /client, /basic, /tester, /depoyardım, /cift_sayilar, /diğerbotlar, /uzun_kelime, /guncellemeler, /takipçi_sayisi, /RobotTom, /Bot, /GitHub, /pi, /sike, /kod_uygulama, /discord_yenilikleri, /discord_sunucu, /yazılım, /tokat, /kurucu, /blackbox, /w, /python, /html, /a(C++ için), /C, /B, /D, /E, /b(C# için), /Ruby, /BASIC, /CSS, /CaseOh, /KinitoPet, /emojikitchen, /git_saver, /SQL, /Assembly, /php, /TS, /Rust, /Lua, /erlang, /MATHLAB, /Perl, /Julia, /Swift, /Go, /R, /ObjC, /Dart, /pes, /fifa, /JS, /Kotlin, /Fortran, /COBOL, /Pascal, /elixir, /Clojure, /Haskell, /OCaml, /c(F# için), /Scala, /Zig, /Lisp, /Prolog, /Nim, /Crystal, /Carbon, /ODIN, /V, /Oberon, /Eiffel, /Modula, /Ada, /PLI, /ALGOL, /Forth, /SmallTalk, /VBN, /Simula, /APL, /python_sunucu, /Eclipse, /Notepad, /Netbeans, /Apache_Tomcat, /Nginx, /sayılar, /jQuery, /Bootsrap, /PyGame, /hayal, /bildigim_yazılım, /arkadaş, /facts(2,3,4,5), /github_py, /bişey, /etkinlikler, /AmericanLife, /Scratch, /Shell, /popular_shells, /bash, /csh, /ksh, /tcsh, /zhs, /duolingo, /StarWars, /png, /jpg, /jpeg, /svg, /webp ve /yardim')
+    await ctx.send('İşte beni çağırmak için kodlar: !selam, !heh, !Gökhan, !Taha, !katıldı(katıldığı tarihi öğrenmek için onun ismini yaz), !Gt_Bot, !Malike(anneme özel kod), !emoji(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,PY,PRO,CAT,BJK), !sifre(rastgele şifre oluşturur), !depo, !sağol, !milliyetçi, !yakala, !tay, !yapımcı, !mem, !mem_nadirlik, !ördek, /kedi, !köpek, !tilki, !bovcx, !santıranç, !babapiro, !bruv, !Benzema, !tarih, !ters_masa, !ben_bilmem, !csgo, !mercan, !iletişim, !git, !tek_sayilar, !masayi_duzenle, !espri, !espri_nadirlik, !bilgi, !yazılım_dili, !Discord, !don_pollo, !tl, !alman_kedy, !kurallar, !komut_sayisi, !youtube, !destek, !kodland, !client, !basic, !tester, !depoyardım, !cift_sayilar, !diğerbotlar, !uzun_kelime, !guncellemeler, !takipçi_sayisi, !RobotTom, !Bot, !GitHub, !i, !sike, !kod_uygulama, !discord_yenilikleri, !discord_sunucu, !yazılım, !tokat, !kurucu, !blackbox, !w, !python, !html, !a(C++ için), !C, !B, !D, !E, !b(C# için), !Ruby, !BASIC, !CSS, !CaseOh, !KinitoPet, !emojikitchen, !git_saver, !SQL, !Assembly, !php, !TS, !Rust, !Lua, !erlang, !MATHLAB, !Perl, !Julia, !Swift, !Go, !R, !ObjC, !Dart, !pes, !fifa, !JS, !Kotlin, !Fortran, !COBOL, !Pascal, !elixir, !Clojure, !Haskell, !OCaml, !c(F# için), !Scala, !Zig, !Lisp, !Prolog, !Nim, !Crystal, !Carbon, !ODIN, !V, !Oberon, !Eiffel, !Ada, !PLI, !ALGOL, !Forth, !SmallTalk, !VBN, !Simula, !APL, !python_sunucu, !Eclipse, !Notepad, !Netbeans, !Apache_Tomcat, !Nginx, !sayılar, !jQuery, !Bootsrap, !PyGame, !hayal, !bildigim_yazılım, !arkadaş, !facts(2,3,4,5), !github_py, !bişey, !etkinlikler, !AmericanLife, !Scratch, !Shell, !popular_shells, !bash, !csh, !ksh, !tcsh, !zhs, !duolingo, !StarWars, !png, !jpg, !jpeg, !svg, !webp, !Autocode, !Object_Pascal, !ActionScript, !ActiveX, !ALGOL_60, !ALGOL_W, !ANCI_C, !AWK, !Caml, !Ceylon, !CPython, !Euler, !FreeBASIC, !GCode, !Groovy, !işaretleme_dili, !OpCode, !JDBC, !Jython, !Karel, !Malbolge, !ML, !Modelica, !Modula, !Modula2, !Object_REXX, !OpenROAD, !Perl6, !PL_SQL, !PureBASIC, !RapidQ, !SNOBOL, !Tcl, !Tiny_C, !XPath, !tired, !htmx, !macOS, !windows, !Linux, !MamacOS, !Distros, !Arch, !Ubuntu, !Gentoo ve !yardim')
 
 @bot.command()
 async def tester(ctx):
@@ -315,7 +315,7 @@ async def git_saver(ctx):
 
 @bot.command()
 async def bildigim_yazılım(ctx):
-    await ctx.send("Bu botun yazarının bildiği yazılım dilleri: Python, Lua, HTML, CSS, C. Merak edenler için Lua ve C dillerinde en basit kodları yazabiliyor (Eğitim eksikliğinden)")
+    await ctx.send("Bu botun yazarının bildiği yazılım dilleri: Python, Lua, HTML, CSS, C, Batchfile, Powershell-script. Merak edenler için Lua, C ve Powershell-script dillerinde en basit kodları yazabiliyor (Eğitim eksikliğinden)")
 
 @bot.command()
 async def pes(ctx):
@@ -529,10 +529,6 @@ async def Eiffel(ctx):
     await ctx.send("Eiffel, Bertrand Meyer ve Eiffel Software tarafından tasarlanan nesne yönelimli bir programlama dilidir. Meyer, dili 1985 yılında ticari yazılım geliştirmenin güvenilirliğini artırmak amacıyla tasarladı; ilk versiyonu 1986'da kullanıma sunuldu. 2005'te Eiffel, ISO standartlaştırılmış bir dil haline geldi.")
 
 @bot.command()
-async def Modula(ctx):
-    await ctx.send("Modula 1975'te Niklaus Wirth tarafından İsviçre'de geliştirilmiş olan programlama dilidir. Pascal'ın ardılı olarak bilinen Modula, adını sahip olduğu modüler programlama özelliğinden almıştır. Kısa ömürlü bir dil olup gelişimini Modula-2 adı altında sürdürmüştür.")
-
-@bot.command()
 async def Ada(ctx):
     await ctx.send("Ada, yapısal, statik tipli, zorunlu, geniş spektrumlu ve nesne yönelimli bir üst düzey bilgisayar programlama dilidir. Pascal ve diğer dillerin genişletilmiş halidir. Gömülü design-by-contract, güçlü yazımı, açık eşzamanlı, senkronize mesaj geçişi, korunmuş objeli ve belirsiz bir dildir.")
 
@@ -641,6 +637,206 @@ async def plankalkül(ctx):
     await ctx.send("Plankalkül icat edilmiş ilk programlama dilidir. 1940'larda Konrad Zuse tarafından tasarlanmış, ancak 1972'ye kadar kamuya açıklanmamış ve 1998'e kadar kullanılmamıştır.")
 
 @bot.command()
+async def Autocode(ctx):
+    await ctx.send("Otomatik kod, Alick Glennie tarafından İngiltere’deki Manchester Üniversitesi’nde Mark 1 bilgisayarı için geliştirilmiştir. Bazıları otomatik kodun derlenen ilk bilgisayar programlama dili olduğunu düşünüyor.")
+
+@bot.command()
+async def Object_Pascal(ctx):
+    await ctx.send("Object Pascal Turbo Pascal'dan sonra Borland firmasının çıkardığı bir programlama dilidir. Delphi isimli geliştirme ortamının da temel aldığı nesne yönelimli programlama dilidir.")
+
+@bot.command()
+async def ActionScript(ctx):
+    await ctx.send("ActionScript, Flash geliştiricilerinin sunum seviyesi mantığını tasarlamak için kullandıkları nesne yönelimli programlama dilidir. Actionscript ECMAscript üzerine inşa edilmiştir, ECMAscript JavaScript'in esasını oluşturduğu için birçok geliştirici için Actionscript'i anlamak kolaydır. Actionscript Flash içerik yazarlığı esnasında kullanılan özel aksiyonları destekleyen bazı ek ECMAscript özellikleri de içermektedir.")
+
+@bot.command()
+async def ActiveX(ctx):
+    await ctx.send("ActiveX, Microsoft'un Microsoft Windows platformları için geliştirdiği bir nesne bileşeni modelidir (COM). Yazılım tabanlı olan ActiveX teknolojisi Internet Explorer eklentisi ve web sayfalarına iliştirilmiş ActiveX tabanlı uygulama olarak çalışır.")
+
+@bot.command()
+async def ALGOL_60(ctx):
+    await ctx.send("ALGOL 60 (İngilizce: ALGOrithmic Language; Türkçe: Algoritmik Dil), ALGOL bilgisayar programlama dilleri ailesinin bir üyesidir. BCPL, B, Pascal, Simula, C ve diğer birçok programlama dilinin öncülüdür.")
+
+@bot.command()
+async def ALGOL_W(ctx):
+    await ctx.send("ALGOL W, Niklaus Wirth ve Tony Hoare tarafından ALGOL 60'ın ardılı olarak geliştirilmiş programlama dilidir. İlk uygulaması Stanford Üniversitesi'ndeki IBM/360 makineleri üzerinde gerçekleştirilmiştir.[1] ALGOL 60'tan farklı olarak string, bitstring ve karmaşık sayı türlerini içermektedir.")
+
+@bot.command()
+async def ANCI_C(ctx):
+    await ctx.send("ANSI C, C programlama dilinin Amerikan Ulusal Standartlar Enstitüsü (ANSI) tarafından yayınlanmış halidir. C programlama dili için ilk standart ANSI tarafından yayınlanmıştır.")
+
+@bot.command()
+async def AWK(ctx):
+    await ctx.send("AWK, Alfred Aho, Peter Weinberger ve Brian Kernighan tarafından 1977 yılında geliştirilmiş ve ilk olarak Unix Version 7 ile yayınlanmış bir programlama dilidir. C gibi derlenen dillerden farklı olarak yorumlanan bir betik dilidir ve günümüzde özellikle sed ve Kabuk programlamada kullanılmaktadır.")
+
+@bot.command()
+async def Caml(ctx):
+    await ctx.send("Caml veya Objective Caml, fonksiyonel, emirsel ve nesne yönelimli bir programlama dilidir. Fransız Ulusal Bilişim ve Uygulamaları Araştırma Kurumu; INRIA tarafından geliştirilmiştir.")
+
+@bot.command()
+async def Ceylon(ctx):
+    await ctx.send("Ceylon, açık kaynak kodlu, nesne tabanlı programlama dili. Red Hat tarafından oluşturulan ve desteklenen Ceylon'un kodları Java sanal makinesi üzerinde çalışabilmekte ve JavaScript kodu olarak derlenebilmektedir.")
+
+@bot.command()
+async def CPython(ctx):
+    await ctx.send("CPython veya cPython, yüksek seviyeli, dinamik ve nesne yönelimli bir dil olan Python'un tamamen C ile yazılmış 'geleneksel' gerçekleştirimidir. CPython temelde bir bytecode yorumlayıcısıdır. Bu sayede pek çok programlama diliyle fonksiyon arayüzünü kullanarak etkileşime girebilir.")
+
+@bot.command()
+async def Euler(ctx):
+    await ctx.send("Euler, Niklaus Wirth ve Helmut Weber tarafından ALGOL 60'ın ardılı olarak geliştirilen programlama dilidir. Adını İsviçreli matematikçi Leonhard Euler'den almıştır. Dil reference, label, symbol, list ve procedure gibi veri tiplerini içermektedir.")
+
+@bot.command()
+async def FreeBASIC(ctx):
+    await ctx.send("FreeBASIC, tamamen ücretsiz, açık kaynak, MS-QuickBASIC sözdizimi ile uyumlu sözdizimine sahip ve birçok yeni özelliği bünyesinde barındıran, çok platformlu bir 32-bit BASIC derleyicidir.")
+
+@bot.command()
+async def GCode(ctx):
+    await ctx.send("G-kodu (G-kodları ya da RS-274) birçok çeşidi olan nümerik kontrol amaçlı kullanılan bir programlama dilidir. Genellikle otomatik makine parçalarını kontrol etmek için bilgisayar destekli üretimde kullanılır. G-kodu sık sık G programlama dili olarak da kullanılır.")
+
+@bot.command()
+async def Groovy(ctx):
+    await ctx.send("Tarihsel olarak, Ruby, Smalltalk gibi esnek, dinamik dillerden etkilenmiştir. İlk geliştiricisi ve dilin ilk kurallarını koyan programcılar James Strachan ve Bob McWhirter'dir. James Strachan projeyi başından itibaren Codehaus adlı bir açık kaynak yazılım geliştirme portali bünyesinde geliştirmiş, sonradan başka geliştiriciler de projeye eklenmiştir.")
+
+@bot.command()
+async def İşaretleme_dili(ctx):
+    await ctx.send("İşaretleme dili, metinlerin nasıl yapılandırılacağına veya biçimlendirileceğine dair açıklamaları içeren yapay bir dildir. Bugün bilişim dünyasında en bilinen örneği HTML'dir. Diğer bilinen örnekler arasında, TeX, LaTeX, XML, SGML sayılabilir.")
+
+@bot.command()
+async def OpCode(ctx):
+    await ctx.send("İşlem kodu (İngilizce: opcode ya da operation code), bilgisayar teknolojisinde makine dili komutunun, gerçekleştirilecek işlemi belirten kısmıdır. Bunların özellikleri ve biçimi, söz konusu işlemcinin (ki bu genel bir merkezi işlem birimi veya daha özel bir işlem birimi olabilir) komut kümesinde ortaya koyulur.")
+
+@bot.command()
+async def JDBC(ctx):
+    await ctx.send("Java Database Connectivity (JDBC), Java programlama dilinde yazılmış uygulamaların veritabanı ile etkileşime girmesini sağlayan bir uygulama programlama arayüzüdür (API). JDBC ile hemen hemen tüm ilişkisel veri tabanı yönetim sistemlerine SQL sorgusu gönderilebilmektedir.")
+
+@bot.command()
+async def Jython(ctx):
+    await ctx.send("Jython, yüksek seviyeli, dinamik ve nesne yönelimli bir dil olan Python'un tamamen Java ile yazılmış bir derleyicisidir. Python kütüphaneleri ile birlikte Java kütüphanesinin kullanımına imkân vermektedir. Jython 1999'a kadar JPython olarak bilinirdi. CPython'dakinin aksine tamamen çoklu kullanıma açıktır. Mayıs 2021 itibarıyla son kararlı sürümü Jython 2.7.2'dir.")
+
+@bot.command()
+async def Karel(ctx):
+    await ctx.send("Karel, öğretici bir programlama dilidir. Richard E. Pattis tarafından yaratılmıştır. Adı robot sözcüğünü ilk kez kullanan Çek yazar Karel Čapek'den gelir.")
+
+@bot.command()
+async def Malbolge(ctx):
+    await ctx.send("Malbolge, Ben Olmstead tarafından 1998'de icat edilmiş kamu malı bir ezoterik programlama dilidir. İsmini Dante'nin Inferno adlı eserindeki Malebolge'den almıştır. Malbolge, özel olarak, sezgiye aykırı bir 'çılgın işlem', üç tabanlı aritmetik ve kendi kendini değiştiren kod yoluyla kullanılması imkansıza yakın olacak şekilde tasarlanmıştır.")
+
+@bot.command()
+async def ML(ctx):
+    await ctx.send("ML ('Meta Language') genel amaçlı bir işlevsel programlama dilidir. Lisp'ten esinlenmiş dilde ifadelerin veri tipini otomatik olarak atayan Hindley-Milner sistemi kullanılmıştır.")
+
+@bot.command()
+async def Modelica(ctx):
+    await ctx.send("Modelica, kâr amacı gütmeyen Modelica Derneği tarafından geliştirilen, nesne yönelimli karmaşık fiziksel modelleme programlama dili ve kütüphaneler bütünüdür. Modelica vasıtasıyla elektronik, hidrolik, termik, mekanik ve daha birçok konu ile ilgili süreçler modellenebilir ve sonuçları benzetimlere dayalı olarak izlenebilir.")
+
+@bot.command()
+async def Modula(ctx):
+    await ctx.send("Modula 1975'te Niklaus Wirth tarafından İsviçre'de geliştirilmiş olan programlama dilidir. Pascal'ın ardılı olarak bilinen Modula, adını sahip olduğu modüler programlama özelliğinden almıştır. Kısa ömürlü bir dil olup gelişimini Modula-2 adı altında sürdürmüştür.")
+
+@bot.command()
+async def Modula2(ctx):
+    await ctx.send("Modula-2, Niklaus Wirth'in Pascal'ı gelişen teknolojiye eriştirmek için 1978'de çıkardığı programlama dilidir. Bu dilin temel yaklaşımı modularitydir. Ada ve C'nin en iyi özelliklerini kendinde sakıncasız toplar denilmesine rağmen yaygınlaşmamış bir dildir. Hem de tercih edilen Fortran, Cobol, Pascal, C ve Adayı kapsamasına rağmen. Wirth, bu dilin devamı olan Oberonu 1988 de çıkardı.")
+
+@bot.command()
+async def Object_REXX(ctx):
+    await ctx.send("Object REXX, nesne yönelimli bir programlama dili.REXX programlama dilinin nesne yönelimli türevidir. IBM tarafından geliştirilmiş olup sonradan REXX-LA (REXX Language Association) isimli derneğe patent ve geliştirme hakkı teslim edilmiştir. REXX-LA tarafından yapılan çalışmalar sonucu, dil yorumlayıcısı açık kaynak bağlamında Open Object REXX olarak adlandırılmıştır. Temel REXX betiklerinin uzantısı .rex olup sınıf betiklerinin uzantısı da .cls biçimindedir.")
+
+@bot.command()
+async def OpenROAD(ctx):
+    await ctx.send("OpenROAD (açılımı: 'Open Rapid Object Application Development') Actian şirketinin 1990'ların başında piyasaya sürdüğü programlama aracıdır. Bu programlama aracı Windows ve Unix/Linux platformlarında çalışabilir. Bu programlama aracı IDE ile yazılmıştır. Macintosh Beta versiyonunda da çalışabilir.")
+
+@bot.command()
+async def Perl6(ctx):
+    await ctx.send("Raku, Perl programlama dilleri ailesinin bir üyesidir. Eski adıyla Perl 6, Ekim 2019'da yeniden adlandırıldı. Raku'nun tasarım süreci 2000 yılında başladı.")
+
+@bot.command()
+async def PL_SQL(ctx):
+    await ctx.send("PL/SQL (Procedural Language/Structured Query Language), Oracle tarafından geliştirilen Oracle veritabanı sistemlerine özel dildir. Oracle veri tabanı sistemlerinde tetikleyici(trigger) ve Saklı yordam (stored procedure) yazmak üzere geliştirilmiş temel sql komutlarının yanında programlamada akış kontrollerini ve değişkenleri kullanmaya olanak sağlayan yani yapısal dillere ait özelliklerin standart SQL'e eklenmesi sonucu oluşan bir dildir. Ada dili örnek alınarak tasarlanmıştır.")
+
+@bot.command()
+async def PureBasıc(ctx):
+    await ctx.send("PureBasic, Windows, Linux ve macOS için Fantaisie Software tarafından geliştirilen ve BASIC tabanlı, ticari olarak dağıtılan bir prosedürel bilgisayar programlama dili ve entegre geliştirme ortamıdır.")
+
+@bot.command()
+async def RapidQ(ctx):
+    await ctx.send("RapidQ (veya Rapid-Q) yarı-nesneye yönelik BASIC türevi bir programlama dilidir. Microsoft Windows ve Linux altında çalışan programlar oluşturmak için kullanılabilir.")
+
+@bot.command()
+async def SNOBOL(ctx):
+    await ctx.send("String Oriented Symbolic Language (Karakter Zincirlerine Yönelik Sembolik Dil, kısaca SNOBOL), 1962 ve 1967 yılları arasında AT&T Bell Laboratuvarları'nda David J. Farber, Ralph E. Griswold ve Ivan P. Polonsky tarafından geliştirilen ve SNOBOL4 ile doruklanan bilgisayar programlama dillerinin soysal (jenerik) adıdır.")
+
+@bot.command()
+async def Tcl(ctx):
+    await ctx.send("Tcl, John K. Ousterhout tarafından geliştirilen bir programlama dilidir. Yaygın kullanımını büyük ölçude TK kütüphanesi ile beraber dağıtılan TK grafik sistemine ve platformdan bağımsız olarak grafik arayüzleri geliştirilmesini sağlayabilmesine borçludur.")
+
+@bot.command()
+async def Tiny_C(ctx):
+    await ctx.send("Tiny C (veya kısaca TCC), Fabrice Bellard tarafından oluşturulmuş x86 ve ARM işlemciler için bir C derleyicidir. Küçük diskli ve yavaş bilgisayarlar için dizayn edilmiştir (mesela kurtarma diskleri). 0.9.23 sürümünde (17 Haziran 2005) Windows işletim sistemi desteği eklenmiştir. GNU Kısıtlı Genel Kamu Lisansı altında dağıtılmaktadır.")
+
+@bot.command()
+async def XPath(ctx):
+    await ctx.send("XPath bir XML dokümanındaki bilgiyi bulmak için kullanılan bir dildir. XPath bir XML dokümanı içindeki elemanları ve onlara ait özellikleri incelemeye yarar.")
+
+@bot.command()
+async def htmx(ctx):
+    await ctx.send("HTMX, JavaScript'in HTML'nin yeteneklerini genişleten küçük ama güçlü bir JavaScript kütüphanesidir ve JavaScript yazmadan web sayfasını dinamik olarak güncellemeye imkan tanır.")
+
+@bot.command()
+async def macOS(ctx):
+    await ctx.send("macOS, Macintosh işletim sistemi ailesinin son sürümüdür ve Apple tarafından Macintosh bilgisayarları için tasarlanmış bir işletim sistemidir. macOS aslen BSD ve Mach mikro çekirdeği üzerine kurulu, açık kaynak bir işletim sistemi olan Darwin'e dayanır.")
+
+@bot.command()
+async def windows(ctx):
+    await ctx.send("Microsoft Windows, kullanıcıya grafik arabirimler ve görsel iletilerle yaklaşarak, yazılımları çalıştırmak, komut vermek gibi klavyeden yazma zorunluluğunu ortadan kaldıran, Microsoft şirketinin geliştirdiği dünyada en çok kullanılan bir işletim sistemi ailesidir.")
+
+@bot.command()
+async def Linux(ctx):
+    await ctx.send("Linux; Linux çekirdeğine dayalı, açık kaynak kodlu, Unix benzeri bir işletim sistemi ailesidir. GNU Genel Kamu Lisansı versiyon 2 ile sunulan ve Linux Vakfı çatısı altında geliştirilen bir özgür yazılım projesidir. Linux ismi ilk geliştiricisi olan Linus Torvalds tarafından 1991 yılında verilmiştir.")
+
+@bot.command()
+async def Distros(ctx):
+    await ctx.send("Linux distribution yani Linux dağıtımları, işletim sistemi çekirdeği üzerine yazılmış uygulamalar ve bu uygulamaları kullanmayı sağlayan grafik (GUI) veya komut (CLI) kullanıcı arayüzler ile paketlenmiş ürünlere Linux distribution denir.")
+
+@bot.command()
+async def Ubuntu(ctx):
+    await ctx.send("Ubuntu, Linux tabanlı özgür ve ücretsiz bir işletim sistemidir. Bilgisayarlar, sunucular ve akıllı telefonlara yönelik olarak geliştirilmektedir.")
+
+@bot.command()
+async def Arch(ctx):
+    await ctx.send("Arch Linux, belirli bir düzeyde GNU/Linux bilgisi olan kullanıcıları hedef seçmiş bağımsız geliştirilen bir topluluk dağıtımıdır. İlk sürümü 2002 yılında yayınlanmıştır.")
+
+@bot.command()
+async def Gentoo(ctx):
+    await ctx.send("Gentoo, kaynak kod temelli bir Linux dağıtımıdır. Kaynak kod tabanlı kurulumunun zorluğu sebebiyle, diğer Linux dağıtımları kadar popüler olamasa da; kaynak kurulumlu dağıtımlar arasında en popüleridir.")
+
+@bot.command()
+async def MamacOS(ctx):
+    await ctx.send("MamacOS, Yazarın kendi yaptığı batchfile yazılım dili tabanlı bir İşletim Sistemidir. Github deposunun linkini burada bulabilirsiniz: https://github.com/gtaha23/MamacOS-Batch .")
+
+@bot.command()
+async def tired(ctx):
+    await ctx.send("I am tired mann... (ı tried to run a C file.)")
+
+@bot.command()
+async def borgir(ctx):
+    await ctx.send("borgir is the ultras of bobis 🥳.")
+
+@bot.command()
+async def toplama(ctx):
+    await ctx.send("Toplama işlemi (genellikle toplama işareti + ile sembolize edilir) dört ana aritmetik işlemden biridir. Diğer aritmetik işlemler çıkarma, çarpma ve bölmedir. İki doğal sayının toplaması sayı değerlerinin toplamını üretir.")
+
+@bot.command()
+async def çıkarma(ctx):
+    await ctx.send("Çıkarma, temel aritmetik işlemlerden biridir. İki sayının farkının alınması işlemidir. Azalma anlamı vardır. İki nokta arasındaki uzaklığı belirtir. Sonucun negatif olması, sonucun orijinden negatif yönde bir uzaklığa karşılık geldiğini gösterir. x + a = b şeklindeki denklemlerin çözüm kümesi x = b - a şeklinde çıkarma işlemi kullanılarak bulunur. Bir sayıdan negatif bir sayının çıkarılması a – (– b) = a + b özdeşliğine göre bir toplama niteliği taşır.")
+
+@bot.command()
+async def bölme(ctx):
+    await ctx.send("Bölme, aritmetiğin temelini oluşturan dört ana işlemden biri olarak kabul edilir. Diğer üç ana işlem ise toplama, çıkarma ve çarpma olarak sıralanır. İşlem sırasında bölünen miktar bölünen olarak adlandırılırken, bu miktarın bölündüğü sayıya bölen denir ve işlemin sonucunda elde edilen değer bölüm olarak tanımlanır.")
+
+@bot.command()
+async def çarpma(ctx):
+    await ctx.send("Bölme, aritmetiğin temelini oluşturan dört ana işlemden biri olarak kabul edilir. Diğer üç ana işlem ise toplama, çıkarma ve çarpma olarak sıralanır. İşlem sırasında bölünen miktar bölünen olarak adlandırılırken, bu miktarın bölündüğü sayıya bölen denir ve işlemin sonucunda elde edilen değer bölüm olarak tanımlanır.")
+
+@bot.command()
 async def duolingo(ctx):
     await ctx.send("İngilizce dersini yapmayı unutma, yoksa aileni kaçırırım...")
 
@@ -674,7 +870,7 @@ async def ohio(ctx):
 
 @bot.command()
 async def komut_sayisi(ctx):
-    await ctx.send("Şuanda 180 komut vardır.(İlerideki hedef 185)")
+    await ctx.send("Şuanda 225 komut vardır.(İlerideki hedef 230)")
 
 @bot.command()
 async def pi(ctx):
@@ -682,11 +878,11 @@ async def pi(ctx):
 
 @bot.command()
 async def guncellemeler(ctx):
-    await ctx.send("En son güncelleme: 5 tane yeni komut eklendi 🥳 ve komut sayısı 180 oldu 📢.")
+    await ctx.send("En son güncelleme: 1 tane yeni komut eklendi 🥳 ve komut sayısı 225 oldu 📢.")
  
 @bot.command()
 async def discord_yenilikleri(ctx):
-    await ctx.send("Discord sunucumuzdaki yenilikler: 5 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
+    await ctx.send("Discord sunucumuzdaki yenilikler: 4 yeni komut geldi ve /yardım diyerek bunu görebiliriz!")
 
 @bot.command()
 async def github_py(ctx):
@@ -714,11 +910,19 @@ async def facts5(ctx):
 
 @bot.command()
 async def version(ctx):
-    await ctx.send("Bu botun versiyonu: v1.22")
+    await ctx.send("Bu botun versiyonu: v1.28")
 
 @bot.command()
 async def data_science(ctx):
     await ctx.send("Veri bilimi, iş için anlamlı öngörüler ayıklamak amacıyla veriler üzerinde gerçekleştirilen çalışmaların adıdır1. Matematik, istatistik, yapay zeka ve bilgisayar mühendisliği gibi alanların ilke ve uygulamalarını bir araya getirerek büyük miktardaki verileri analiz eden, disiplinler arası bir yaklaşımdır1. Veri bilimcileri, ne olduğu, neden olduğu, ne olacağı ve sonuçlarla neler yapılabileceğini sormalarına ve bu soruları cevaplamalarına yardımcı olan analizleri yaparlar.")
+
+@bot.command()
+async def software_engineering(ctx):
+    await ctx.send("Yazılım mühendisliği, yazılım uygulamalarının tasarımı, geliştirilmesi, test edilmesi ve bakımıyla ilgilenen bilgisayar biliminin dalıdır . Yazılım mühendisleri, son kullanıcılara yönelik yazılım çözümleri oluşturmak için mühendislik ilkelerini ve programlama dilleri bilgilerini uygular.")
+
+@bot.command()
+async def FAQs(ctx):
+    await ctx.send("Sıkça sorulan sorular (FAQs): 1- Bu bot neden var? bu bot kodland'ın python pro kursu için oluşturulmuş ve yazılımcının fikriyle özel olarak devam ediliyor. 2- Neden Yazılım? Çünkü hem gelecek için uygun bir adım ve para konusunda sorun çekme sıkıntısı yok. /Bu komutta Güncellemeler devam ediyor\ ")
 
 @bot.command()
 async def png(ctx):
@@ -930,6 +1134,8 @@ async def bovcx(ctx):
 
 @bot.command()
 async def tarih(ctx):
-    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.")
+    await ctx.send("Bu bot 21 Şubat 2024 tarihinde Gökhan Taha AĞPINAR tarafından oluşturuldu.")    
 
-bot.run("token")
+@bot.command()
+async def olay(ctx):
+    await ctx.send("Yazar yanlışlıkla ayarlarımla oynadı ve beni resetleme gibi zor bir dönemden geçti, ama artık stabil durumdayım!")
